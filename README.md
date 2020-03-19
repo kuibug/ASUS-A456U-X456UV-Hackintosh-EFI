@@ -9,7 +9,7 @@
 | 操作系统 | macOS Mojave 10.14.5 (18E226)                  |                                  |
 | CPU      | Intel Core i5-6200U, 2700 MHz  双核            |                                  |
 | 显卡     | `Intel HD Graphics 520` / NVIDIA GeForce 920MX | `920MX` 无法驱动                 |
-| 声卡     | Conexant SmartAudio HD (Conexant Unknown）     | 实际型号为 `CX8050`              |
+| 声卡     | Conexant SmartAudio HD (Conexant Unknown）     | 实际型号为 `CX8050` layout：`13` |
 | 无线网卡 | Intel(R) Wireless-AC 9260                      | 原配为高通AR956x(AR9565)可以驱动 |
 | 有线网卡 | Realtek RTL8111 PCI-E Gigabit Ethernet         |                                  |
 
@@ -17,9 +17,9 @@
 
 1. 完成度：**能用级别！**
 2. 若安装 `Mojave 10.14.5` 请务必保证磁盘至少有 `25GB` 的空间。建议容量：尝鲜(40GB),长期使用(60GB+)。
-3. 镜像来自[黑果小兵](https://blog.daliansky.net/)，感谢大佬提供的镜像和十分硬核的教程。
-4. 请安装完成**后**再进行EFI替换。
-5. 部分可能用得到的工具已上传[百度云]()。
+3. 镜像来自 [黑果小兵](https://blog.daliansky.net/)，感谢大佬提供的镜像和十分硬核的教程。
+4. 请安装完成 **后** 再进行EFI替换。
+5. 部分可能用得到的工具已上传 [百度云]()。
 6. 当遇到无法引导时请尝试使用 `config_init.plist` 进行引导。
 > 如缺乏耐心**请勿升级**&折腾10.15.3(尝试多次无法引导)。
 
@@ -35,24 +35,31 @@ Mac本来就不是游戏用的，不支持显示，也不支持CUDA，驱动器�
 但是操作逻辑十分反人类，已删除！！！
 >想体验一下的可以自己添加 `VoodooI2CHID.kext` 😏
 
-### 3.亮度调节
-个人完全用不到，未添加。
-
-### 4.睿频/超频
-该笔记本为我服务多年，年迈无力，未添加。  
+### ~~3.睿频/超频~~
+~~该笔记本为我服务多年，年迈无力，未添加~~。 已添加睿频支持，节能真香！   
 (事实上我的笔记本睿频会有烦人的电啸声🙃)
 
-### 5.电量显示
-电量显示只能显示 `0%` 和 `正在充电` 。故删除  
-若你真的很需要一个指示看你的笔记本是否在充电。可以自己安装 `ACPIBatteryManager.kext`
+### ~~4.电量显示~~
+~~电量显示只能显示 `0%` 和 `正在充电` 。故删除。~~  
+已修复，电池磨损过高满载只能撑住20分钟……续航有兴趣的自己去测试吧
 
-## 关于无线网卡
+## 5. WIFI !
 1. 由于网卡被我替换，持有该卡的朋友试验过 `IO80211FamilyV2.kext` 可以驱动，有需要的充分利用百度下载安装。  
-2. 和我一样换了Intel无线网卡的同学那我只能恭喜你了，你找到了一个一(shi)战(ji)成(nan)名(ti)的机会。  
-目前已知 `AppleIntelWifiAdapt` 能支持无线，GitHub下载编译即可，但该项目基于`10.15` API 开发……
+2. 和我一样换了Intel无线网卡的同学那我只能恭喜你了，你找到了一个了一(shi)战(ji)成(nan)名(ti)的机会。  
+目前已知 `AppleIntelWifiAdapt` 能支持无线，GitHub下载编译即可，但该项目基于`10.15` API 开发……  
+
+附： `AppleIntelWiFiMVM` 支持列表(该项目2016年停止维护)
+* Intel&reg; Wireless 3160
+* Intel&reg; Wireless 3165
+* Intel&reg; Wireless 4165
+* Intel&reg; Wireless 7260
+* Intel&reg; Wireless 7265
+* Intel&reg; Wireless 8260
+* NUC on-board wireless for NUC 5i\*RY\*
+* NUC on-board wireless for NUC 6i\*SY\*
 
 ## 蓝牙问题
-若蓝牙无法连接/搜索 请**彻底关闭**Windows后(比如重启操作)再进入MacOS。
+若蓝牙无法连接/搜索 请 **彻底关闭** Windows后(比如重启操作)再进入MacOS。
 
 ## 安装字体爆内存问题
 这个我也不知道是不是BUG，安装5个ttc吃掉了24G内存。  
