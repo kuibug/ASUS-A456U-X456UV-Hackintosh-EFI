@@ -1,0 +1,168 @@
+142:505  0:151  Found BIOS RSDP at FCCA0
+142:505  0:000  Printing ACPI tables from RSDP FCCA0 ...
+142:505  0:000   FCCA0: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+142:505  0:000    (Xsdt: 763180A8, Rsdt: 76318028)
+142:505  0:000    763180A8: 'XSDT', 'Notebook', Rev: 1, Len: 204
+142:505  0:000    76318028: 'RSDT', 'Notebook', Rev: 1, Len: 120
+142:505  0:000    Tables in Xsdt: 21
+142:505  0:000    0. 7633E450: 'FACP', 'Notebook', Rev: 5, Len: 268
+142:505  0:000        (Dsdt: 76318200, Facs: 770B2F80, XDsdt: 76318200, XFacs: 0)
+142:505  0:000        76318200: 'DSDT', 'Notebook', Rev: 2, Len: 156235
+142:508  0:002        770B2F80: 'FACS', Ver: 2, Len: 64
+142:508  0:000    1. 7633E560: 'APIC', 'Notebook', Rev: 3, Len: 132
+142:508  0:000    2. 7633E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68
+142:508  0:000    3. 7633E630: 'FIDT', 'Notebook', Rev: 1, Len: 156
+142:508  0:000    4. 7633E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60
+142:508  0:000    5. 7633E710: 'HPET', 'Notebook', Rev: 1, Len: 56
+142:508  0:000    6. 7633E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+142:508  0:000    7. 7633EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193
+142:508  0:000    8. 7633EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148
+142:508  0:000    9. 7633EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+142:508  0:000    10. 7633EE08: 'DBGP', '', Rev: 1, Len: 52
+142:508  0:000    11. 7633EE40: 'DBG2', '', Rev: 0, Len: 84
+142:508  0:000    12. 7633EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720
+142:508  0:000    13. 76342C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658
+142:508  0:000    14. 76348488: 'UEFI', '', Rev: 1, Len: 66
+142:508  0:000    15. 763484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+142:508  0:000    16. 76349348: 'BGRT', 'Notebook', Rev: 1, Len: 56
+142:508  0:000    17. 76349380: 'SSDT', 'SgPch', Rev: 2, Len: 1966
+142:508  0:000    18. 76349B30: 'DMAR', 'SKL', Rev: 1, Len: 240
+142:508  0:000    19. 76349C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776
+142:508  0:000    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85
+142:508  0:000    Tables in Rsdt: 21
+142:508  0:000    0. 76318178: 'FACP', 'Notebook', Rev: 2, Len: 132
+142:508  0:000        (Dsdt: 76318200, Facs: 770B2F40)
+142:508  0:000        76318200: 'DSDT', 'Notebook', Rev: 2, Len: 156235
+142:510  0:002        770B2F40: 'FACS', Ver: 0, Len: 64
+142:510  0:000    1. 7633E560: 'APIC', 'Notebook', Rev: 3, Len: 132
+142:510  0:000    2. 7633E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68
+142:510  0:000    3. 7633E630: 'FIDT', 'Notebook', Rev: 1, Len: 156
+142:510  0:000    4. 7633E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60
+142:510  0:000    5. 7633E710: 'HPET', 'Notebook', Rev: 1, Len: 56
+142:510  0:000    6. 7633E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+142:510  0:000    7. 7633EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193
+142:510  0:000    8. 7633EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148
+142:510  0:000    9. 7633EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+142:510  0:000    10. 7633EE08: 'DBGP', '', Rev: 1, Len: 52
+142:510  0:000    11. 7633EE40: 'DBG2', '', Rev: 0, Len: 84
+142:510  0:000    12. 7633EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720
+142:510  0:000    13. 76342C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658
+142:510  0:000    14. 76348488: 'UEFI', '', Rev: 1, Len: 66
+142:510  0:000    15. 763484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+142:510  0:000    16. 76349348: 'BGRT', 'Notebook', Rev: 1, Len: 56
+142:510  0:000    17. 76349380: 'SSDT', 'SgPch', Rev: 2, Len: 1966
+142:510  0:000    18. 76349B30: 'DMAR', 'SKL', Rev: 1, Len: 240
+142:510  0:000    19. 76349C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776
+142:510  0:000    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85
+142:510  0:000  Found UEFI Acpi 2.0 RSDP at 76318000
+142:510  0:000  Saving ACPI tables from RSDP 76318000 to EFI\CLOVER\ACPI\origin ...
+142:510  0:000   76318000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+142:510  0:000    (Xsdt: 763180A8, Rsdt: 76318028)
+142:510  0:000    763180A8: 'XSDT', 'Notebook', Rev: 1, Len: 204
+142:510  0:000    76318028: 'RSDT', 'Notebook', Rev: 1, Len: 120
+142:510  0:000    Tables in Xsdt: 21
+142:510  0:000    0. 7633E450: 'FACP', 'Notebook', Rev: 5, Len: 268
+142:510  0:000        (Dsdt: 76318200, Facs: 770B2F80, XDsdt: 76318200, XFacs: 0)
+142:510  0:000        76318200: 'DSDT', 'Notebook', Rev: 2, Len: 156235
+142:513  0:002        770B2F80: 'FACS', Ver: 2, Len: 64
+142:513  0:000    1. 7633E560: 'APIC', 'Notebook', Rev: 3, Len: 132
+142:513  0:000    2. 7633E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68
+142:513  0:000    3. 7633E630: 'FIDT', 'Notebook', Rev: 1, Len: 156
+142:513  0:000    4. 7633E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60
+142:513  0:000    5. 7633E710: 'HPET', 'Notebook', Rev: 1, Len: 56
+142:513  0:000    6. 7633E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+142:513  0:000    7. 7633EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193
+142:513  0:000    8. 7633EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148
+142:513  0:000    9. 7633EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+142:513  0:000    10. 7633EE08: 'DBGP', '', Rev: 1, Len: 52
+142:513  0:000    11. 7633EE40: 'DBG2', '', Rev: 0, Len: 84
+142:513  0:000    12. 7633EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720
+142:513  0:000    13. 76342C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658
+142:513  0:000    14. 76348488: 'UEFI', '', Rev: 1, Len: 66
+142:513  0:000    15. 763484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+142:513  0:000    16. 76349348: 'BGRT', 'Notebook', Rev: 1, Len: 56
+142:513  0:000    17. 76349380: 'SSDT', 'SgPch', Rev: 2, Len: 1966
+142:513  0:000    18. 76349B30: 'DMAR', 'SKL', Rev: 1, Len: 240
+142:513  0:000    19. 76349C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776
+142:513  0:000    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85
+142:513  0:000    Tables in Rsdt: 21
+142:513  0:000    0. 76318178: 'FACP', 'Notebook', Rev: 2, Len: 132
+142:513  0:000        (Dsdt: 76318200, Facs: 770B2F40)
+142:513  0:000        76318200: 'DSDT', 'Notebook', Rev: 2, Len: 156235
+142:515  0:002        770B2F40: 'FACS', Ver: 0, Len: 64
+142:515  0:000    1. 7633E560: 'APIC', 'Notebook', Rev: 3, Len: 132
+142:515  0:000    2. 7633E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68
+142:515  0:000    3. 7633E630: 'FIDT', 'Notebook', Rev: 1, Len: 156
+142:515  0:000    4. 7633E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60
+142:515  0:000    5. 7633E710: 'HPET', 'Notebook', Rev: 1, Len: 56
+142:515  0:000    6. 7633E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+142:515  0:000    7. 7633EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193
+142:515  0:000    8. 7633EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148
+142:515  0:000    9. 7633EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+142:515  0:000    10. 7633EE08: 'DBGP', '', Rev: 1, Len: 52
+142:515  0:000    11. 7633EE40: 'DBG2', '', Rev: 0, Len: 84
+142:515  0:000    12. 7633EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720
+142:515  0:000    13. 76342C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658
+142:515  0:000    14. 76348488: 'UEFI', '', Rev: 1, Len: 66
+142:515  0:000    15. 763484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+142:515  0:000    16. 76349348: 'BGRT', 'Notebook', Rev: 1, Len: 56
+142:515  0:000    17. 76349380: 'SSDT', 'SgPch', Rev: 2, Len: 1966
+142:515  0:000    18. 76349B30: 'DMAR', 'SKL', Rev: 1, Len: 240
+142:515  0:000    19. 76349C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776
+142:515  0:000    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85
+142:515  0:000  Found UEFI Acpi 1.0 RSDP at 76318000
+142:515  0:000  Printing ACPI tables from RSDP 76318000 ...
+142:515  0:000   76318000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+142:515  0:000    (Xsdt: 763180A8, Rsdt: 76318028)
+142:515  0:000    763180A8: 'XSDT', 'Notebook', Rev: 1, Len: 204
+142:515  0:000    76318028: 'RSDT', 'Notebook', Rev: 1, Len: 120
+142:515  0:000    Tables in Xsdt: 21
+142:515  0:000    0. 7633E450: 'FACP', 'Notebook', Rev: 5, Len: 268
+142:515  0:000        (Dsdt: 76318200, Facs: 770B2F80, XDsdt: 76318200, XFacs: 0)
+142:515  0:000        76318200: 'DSDT', 'Notebook', Rev: 2, Len: 156235
+142:518  0:002        770B2F80: 'FACS', Ver: 2, Len: 64
+142:518  0:000    1. 7633E560: 'APIC', 'Notebook', Rev: 3, Len: 132
+142:518  0:000    2. 7633E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68
+142:518  0:000    3. 7633E630: 'FIDT', 'Notebook', Rev: 1, Len: 156
+142:518  0:000    4. 7633E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60
+142:518  0:000    5. 7633E710: 'HPET', 'Notebook', Rev: 1, Len: 56
+142:518  0:000    6. 7633E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+142:518  0:000    7. 7633EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193
+142:518  0:000    8. 7633EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148
+142:518  0:000    9. 7633EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+142:518  0:000    10. 7633EE08: 'DBGP', '', Rev: 1, Len: 52
+142:518  0:000    11. 7633EE40: 'DBG2', '', Rev: 0, Len: 84
+142:518  0:000    12. 7633EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720
+142:518  0:000    13. 76342C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658
+142:518  0:000    14. 76348488: 'UEFI', '', Rev: 1, Len: 66
+142:518  0:000    15. 763484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+142:518  0:000    16. 76349348: 'BGRT', 'Notebook', Rev: 1, Len: 56
+142:518  0:000    17. 76349380: 'SSDT', 'SgPch', Rev: 2, Len: 1966
+142:518  0:000    18. 76349B30: 'DMAR', 'SKL', Rev: 1, Len: 240
+142:518  0:000    19. 76349C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776
+142:518  0:000    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85
+142:518  0:000    Tables in Rsdt: 21
+142:518  0:000    0. 76318178: 'FACP', 'Notebook', Rev: 2, Len: 132
+142:518  0:000        (Dsdt: 76318200, Facs: 770B2F40)
+142:518  0:000        76318200: 'DSDT', 'Notebook', Rev: 2, Len: 156235
+142:521  0:002        770B2F40: 'FACS', Ver: 0, Len: 64
+142:521  0:000    1. 7633E560: 'APIC', 'Notebook', Rev: 3, Len: 132
+142:521  0:000    2. 7633E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68
+142:521  0:000    3. 7633E630: 'FIDT', 'Notebook', Rev: 1, Len: 156
+142:521  0:000    4. 7633E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60
+142:521  0:000    5. 7633E710: 'HPET', 'Notebook', Rev: 1, Len: 56
+142:521  0:000    6. 7633E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+142:521  0:000    7. 7633EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193
+142:521  0:000    8. 7633EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148
+142:521  0:000    9. 7633EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+142:521  0:000    10. 7633EE08: 'DBGP', '', Rev: 1, Len: 52
+142:521  0:000    11. 7633EE40: 'DBG2', '', Rev: 0, Len: 84
+142:521  0:000    12. 7633EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720
+142:521  0:000    13. 76342C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658
+142:521  0:000    14. 76348488: 'UEFI', '', Rev: 1, Len: 66
+142:521  0:000    15. 763484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+142:521  0:000    16. 76349348: 'BGRT', 'Notebook', Rev: 1, Len: 56
+142:521  0:000    17. 76349380: 'SSDT', 'SgPch', Rev: 2, Len: 1966
+142:521  0:000    18. 76349B30: 'DMAR', 'SKL', Rev: 1, Len: 240
+142:521  0:000    19. 76349C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776
+142:521  0:000    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85

@@ -1,16 +1,17 @@
 # ASUS A456U for macOS Mojave 10.14.5 Hackintosh
 给自己旧笔记本安装了黑果尝鲜，体验还是可以的，分享一下EFI，造福相同型号的本本。  
-![](./Other/desktop.png)
+![system_info](./Other/system_info.png)
 
 ## 配置
 | 规格     | 详细信息                                       | 备注                             |
 |----------|------------------------------------------------|----------------------------------|
-| BIOS     | X456UV.300                                     |                                  |
+| BIOS     | X456UV.302                                     |                                  |
 | 操作系统 | macOS Mojave 10.14.5 (18E226)                  |                                  |
 | CPU      | Intel Core i5-6200U, 2700 MHz  双核            |                                  |
 | 显卡     | `Intel HD Graphics 520` / NVIDIA GeForce 920MX | `920MX` 无法驱动                 |
 | 声卡     | Conexant SmartAudio HD (Conexant Unknown）     | 实际型号为 `CX8050` layout：`13` |
-| 无线网卡 | Intel(R) Wireless-AC 9260                      | 原配为高通AR956x(AR9565)可以驱动 |
+|触控板    |I2C HID 设备(ELAN 1000)                          |                                   |
+| 无线网卡 | Intel&reg; Wireless-AC 9260                      | 原配为高通AR956x(AR9565)可以驱动 |
 | 有线网卡 | Realtek RTL8111 PCI-E Gigabit Ethernet         |                                  |
 
 ## 说明
@@ -29,12 +30,15 @@
 
 ### 1.独显显卡 `GeForce 920MX`
 笔记本独显基本不能用。我也尝试过，铩羽而归。  
-Mac本来就不是游戏用的，不支持显示，也不支持CUDA，驱动器来完全没用。
+Mac本来就不是游戏用的，不支持显示，也不支持`CUDA`，驱动起来完全没用。
 
 ### 2.触控板(请务必外接USB/蓝牙鼠标！)
 触控板为I2C HID 类型触控板。能驱动。   
-但是操作逻辑十分反人类，已删除！！！
->想体验一下的可以自己添加 `VoodooI2CHID.kext` 😏
+或许是DSDT没改对，截止目前为止仍只能工作在 `轮询模式` 下，有指针漂移Bug，彻底移除 `I2C` 驱动.
+>想体验一下的可以自己添加 `VoodooI2C.kext` 和 `VoodooI2CHID.kext` 😏  
+>爱折腾的提供[教程](https://www.penghubingzhou.cn/2019/07/24/VoodooI2C%20DSDT%20Edit%20FAQ/)一篇  
+>clover提取原版DSDT备份在`Other/origin`    
+>修改的DSDT备份在`Other/I2C-PATCH`下。
 
 ### ~~3.睿频/超频~~
 ~~该笔记本为我服务多年，年迈无力，未添加~~。 已添加睿频支持，节能真香！   
