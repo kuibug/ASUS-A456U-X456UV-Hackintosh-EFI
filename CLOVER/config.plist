@@ -14,6 +14,8 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
+				<key>AddPNLF</key>
+				<true/>
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>FixHPET</key>
@@ -121,7 +123,7 @@
 					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>R0ZYMA==</data>
 					<key>Replace</key>
@@ -146,6 +148,62 @@
 					<data>VklEXwhfQURSDAAAAgA=</data>
 					<key>Replace</key>
 					<data>SUdQVQhfQURSDAAAAgA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _STA to XSTA in GPI0</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1NUQQ==</data>
+					<key>Replace</key>
+					<data>WFNUQQ==</data>
+					<key>TgtBridge</key>
+					<data>R1BJMA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>I2C0 to I2X0</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>STJDMA==</data>
+					<key>Replace</key>
+					<data>STJYMA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>I2X0:_STA to XSTA</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>X1NUQQ==</data>
+					<key>Replace</key>
+					<data>WFNUQQ==</data>
+					<key>TgtBridge</key>
+					<data>STJYMA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>I2C1 to I2X1</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>STJDMQ==</data>
+					<key>Replace</key>
+					<data>STJYMQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>I2X1:_STA to XSTA</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>X1NUQQ==</data>
+					<key>Replace</key>
+					<data>WFNUQQ==</data>
+					<key>TgtBridge</key>
+					<data>STJYMQ==</data>
 				</dict>
 			</array>
 		</dict>
@@ -173,6 +231,8 @@
 			</dict>
 		</array>
 		<key>FixHeaders</key>
+		<true/>
+		<key>PatchAPIC</key>
 		<true/>
 		<key>SSDT</key>
 		<dict>
@@ -705,6 +765,34 @@
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>g/8/Dw==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable AppleIntelLpssI2C (credit by Coolstar)    </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>SU9LaXQ=</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleIntelLpssI2C</string>
+				<key>Replace</key>
+				<data>SU9LaXM=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable AppleIntelLpssI2CCOntroller (credit by     Coolstar)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>SU9LaXQ=</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleIntelLpssI2CController</string>
+				<key>Replace</key>
+				<data>SU9LaXM=</data>
 			</dict>
 		</array>
 	</dict>
