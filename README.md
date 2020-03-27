@@ -1,4 +1,4 @@
-# ASUS A456U for macOS Mojave 10.14.5 Hackintosh
+# ASUS A456U for macOS Hackintosh
 给自己旧笔记本安装了黑果尝鲜，体验还是可以的，分享一下EFI，造福相同型号的本本。  
 ![system_info](./Other/system_info.png)
 
@@ -6,12 +6,12 @@
 | 规格     | 详细信息                                       | 备注                             |
 |----------|------------------------------------------------|----------------------------------|
 | BIOS     | X456UV.302                                     |                                  |
-| 操作系统 | macOS Mojave 10.14.5 (18E226)                  |                                  |
+| 操作系统 | MacOS ~~Mojave 10.14.5 (18E226)~~              | 已升级至  `Catalina  10.15.3`    |
 | CPU      | Intel Core i5-6200U, 2700 MHz  双核            |                                  |
 | 显卡     | `Intel HD Graphics 520` / NVIDIA GeForce 920MX | `920MX` 无法驱动                 |
 | 声卡     | Conexant SmartAudio HD (Conexant Unknown）     | 实际型号为 `CX8050` layout：`13` |
-|触控板    |I2C HID 设备(ELAN 1000)                          |                                   |
-| 无线网卡 | Intel&reg; Wireless-AC 9260                      | 原配为高通AR956x(AR9565)可以驱动 |
+| 触控板   | I2C HID 设备(ELAN 1000)                        |                                  |
+| 无线网卡 | Intel&reg; Wireless-AC 9260                    | 原配为高通AR956x(AR9565)可以驱动 |
 | 有线网卡 | Realtek RTL8111 PCI-E Gigabit Ethernet         |                                  |
 
 ## 说明
@@ -23,7 +23,8 @@
 5. 部分可能用得到的工具已上传 [百度云](https://pan.baidu.com/s/10DGeGL3vFaZgCVVZD2OZRA) 
 提取码：0kiv。
 6. 当遇到无法引导时请尝试使用 `config_init.plist` 进行引导。
-> 如缺乏耐心**请勿升级**&折腾10.15.3。
+7. 请务必使用USB2.0口进行操作系统安装(包括Windows和Linux)
+> **请勿直接升级**10.15.3。
 
 ## 哪些不能用？
 >当你能忍受某个事物所有缺点，那么她一定适合你。
@@ -38,11 +39,12 @@ Mac本来就不是游戏用的，不支持显示，也不支持`CUDA`，驱动�
 >想体验一下的可以自己添加 `VoodooI2C.kext` 和 `VoodooI2CHID.kext` 😏  
 >爱折腾的提供[教程](https://www.penghubingzhou.cn/2019/07/24/VoodooI2C%20DSDT%20Edit%20FAQ/)一篇  
 >clover提取原版DSDT备份在`Other/origin`    
->修改的DSDT备份在`Other/I2C-PATCH`下。
 
-### ~~3.睿频/超频~~
-~~该笔记本为我服务多年，年迈无力，未添加~~。 已添加睿频支持，节能真香！   
-(事实上我的笔记本睿频会有烦人的电啸声🙃)
+### ~~3.睿频~~
+~~该笔记本为我服务多年，年迈无力，未添加~~。  
+已添加睿频支持，节能真香！   
+睿频范围(1.2 ~ 2.8 GHz)  
+>事实上我的笔记本睿频会有烦人的电啸声🙃
 
 ### ~~4.电量显示~~
 ~~电量显示只能显示 `0%` 和 `正在充电` 。故删除。~~  
@@ -51,7 +53,8 @@ Mac本来就不是游戏用的，不支持显示，也不支持`CUDA`，驱动�
 ## 5. WIFI !
 1. 由于网卡被我替换，持有该卡的朋友试验过 `IO80211FamilyV2.kext` 可以驱动，有需要的充分利用百度下载安装。  
 2. 和我一样换了Intel无线网卡的同学那我只能恭喜你了，你找到了一个了一(shi)战(ji)成(nan)名(ti)的机会。  
-目前已知 `AppleIntelWifiAdapt` 能支持无线，GitHub下载编译即可，但该项目基于`10.15` API 开发……  
+~~目前已知 `AppleIntelWifiAdapt` 能支持无线，GitHub下载编译即可，但该项目基于`10.15` API 开发……~~  
+实践证明 `AppleIntelWifiAdapt` 目前版本无法驱动 `Intel 9260`
 
 附： `AppleIntelWiFiMVM` 支持列表(该项目2016年停止维护)
 * Intel&reg; Wireless 3160
@@ -64,7 +67,7 @@ Mac本来就不是游戏用的，不支持显示，也不支持`CUDA`，驱动�
 * NUC on-board wireless for NUC 6i\*SY\*
 
 ## 蓝牙问题
-若蓝牙无法连接/搜索 请 **彻底关闭** Windows后(比如重启操作)再进入MacOS。
+若蓝牙无法连接/搜索 请从 Windows **热重启** 进入MacOS。
 
 ## 安装字体爆内存问题
 这个我也不知道是不是BUG，安装5个ttc吃掉了24G内存。  
@@ -72,13 +75,21 @@ Mac本来就不是游戏用的，不支持显示，也不支持`CUDA`，驱动�
 2. 不要批量安装字体集。
 > 附赠：**请不要尝试使用任何方法让MacOS对NTFS进行读写！**，该操作可能会在造成NTFS卷损坏(譬如我装有ttc的移动硬盘)。
 
-## VSCode问题
->虽然 `VS`和 `VScode` 的关系好比`Java`和`JavaScript`，雷锋和雷峰塔，但是它仍然继承了VS一样谜一般的BUG  
-
-遇到过的问题有
-1. 长时间后台有概率爆CPU(和VS一样重启就好)
-2. 直接崩溃(不好意思你可能需要重装VSCode)
-
 ## 如有其他问题和建议可以在Issue告知我
 
 国内的童鞋我同步了 [Coding](https://e.coding.net/zewenchenkmfoxm/ASUS_X456UV_Hackintosh_EFI.git)
+
+# update for 10.15.3
+
+## 相比10.14的变化
+>基本没有变动，主要是修复驱动
+1. HDMI有声音了，虽然声音是笔记本声卡发出的……
+2. 安装ttc字体不再爆内存了（这个应该是10.14 NTFS驱动的问题）
+3. typeC接口无法使用 USB3.0（10.14就存在了我没有发现）
+4. clover升级到了5107
+5. 注入了白果三码,**在修改三码之前请勿登录IMessage！**(该码来自互联网可能有大量人使用，封号别来找我)
+
+## 使用建议
+1. 不要在有重要资料的硬盘安装MacOS
+2. 不要对NTFS执行**写**和密集的读取操作
+3. 双系统建议建立独立 `exFAT` 分区，作为文件交换使用(本非酋NTFS for mac 也翻车了，硬盘有价数据无价)
