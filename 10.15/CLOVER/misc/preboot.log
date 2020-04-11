@@ -1,0 +1,548 @@
+0:100  0:100  MemLog inited, TSC freq: 2400339500
+0:100  0:000  CPU was calibrated with RTC
+0:100  0:000  
+0:100  0:000  Now is 31.03.2020,  18:54:43 (GMT)
+0:100  0:000  Starting Clover revision: 5107 (master, commit a3f3053c3) on American Megatrends EFI
+0:100  0:000  Build with: [Args: -D NO_GRUB_DRIVERS_EMBEDDED -t GCC53 | -D NO_GRUB_DRIVERS_EMBEDDED --conf=/Users/sergey/src/CloverHackyColor/Conf -D USE_LOW_EBDA -a X64 -b RELEASE -t GCC53 -n 5 | OS: 10.14.6]
+0:100  0:000  SelfDevicePath=PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,31A9E8F0-43D7-4CCC-9FDB-4EC2FDBFFD47,0x1000,0x96000) @73DCA798
+0:100  0:000  SelfDirPath = \EFI\CLOVER
+0:100  0:000  Clover : Image base = 0x70C7B000
+0:955  0:855  SimpleTextEx Status=Success
+0:955  0:000  === [ Get Smbios ] ==============================
+0:955  0:000  Type 16 Index = 0
+0:955  0:000  Total Memory Slots Count = 2
+0:955  0:000  Type 17 Index = 0
+0:955  0:000  SmbiosTable.Type17->Speed = 2133MHz
+0:955  0:000  SmbiosTable.Type17->Size = 4096MB
+0:955  0:000  SmbiosTable.Type17->Bank/Device = BANK 0 ChannelA-DIMM0
+0:955  0:000  SmbiosTable.Type17->Vendor = Micron
+0:955  0:000  SmbiosTable.Type17->SerialNumber = 00000000
+0:955  0:000  SmbiosTable.Type17->PartNumber = 8ATF51264AZ-2G1A2   
+0:955  0:000  Type 17 Index = 1
+0:955  0:000  SmbiosTable.Type17->Speed = 2133MHz
+0:955  0:000  SmbiosTable.Type17->Size = 4096MB
+0:955  0:000  SmbiosTable.Type17->Bank/Device = BANK 2 ChannelB-DIMM0
+0:955  0:000  SmbiosTable.Type17->Vendor = Kingston
+0:955  0:000  SmbiosTable.Type17->SerialNumber = 18164615
+0:955  0:000  SmbiosTable.Type17->PartNumber = KHX2133C13S4/4G     
+0:955  0:000  Boot status=0
+0:955  0:000  Running on: 'X456UV' with board 'X456UV'
+0:955  0:000  === [ GetCPUProperties ] ========================
+0:955  0:000  CPU Vendor = 756E6547 Model=406E3
+0:955  0:000   The CPU supported SSE4.1
+0:955  0:000  BrandString = Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+0:955  0:000   The CPU supported turbo
+0:955  0:000  MSR 0x35               20004
+0:955  0:000   TSC/CCC Information Leaf:
+0:955  0:000    numerator     : 200
+0:955  0:000    denominator   : 2
+0:955  0:000   Calibrated ARTFrequency: 24003395
+0:955  0:000   Rounded ARTFrequency: 24000000
+0:955  0:000  MSR 0xE2 before patch 1E008006
+0:955  0:000  MSR 0xE2 is locked, PM patches will be turned on
+0:955  0:000  MSR 0xCE              0004043D_F1011800
+0:955  0:000  corrected FLEX_RATIO = 0
+0:955  0:000  MSR 0x1B0             00000000
+0:955  0:000  FSBFrequency = 92 MHz, DMI FSBFrequency = 100 MHz, Corrected FSBFrequency = 100 MHz
+0:955  0:000  MaxDiv/MinDiv: 24.0/4
+0:955  0:000  Turbo: 27/27/27/28
+0:955  0:000  Features: 0xBFEBFBFF
+0:955  0:000  Threads: 4
+0:955  0:000  Cores: 2
+0:955  0:000  FSB: 100 MHz
+0:955  0:000  CPU: 2200 MHz
+0:955  0:000  TSC: 2200 MHz
+0:955  0:000  PIS: 100 MHz
+0:955  0:000  ExternalClock: 25 MHz
+0:955  0:000  === [ GetDevices ] ==============================
+0:955  0:000  GOP found at: PciRoot(0x0)/Pci(0x2,0x0)/AcpiAdr(0x80011400)
+0:955  0:000  PCI (00|00:00.00) : 8086 1904 class=060000
+0:955  0:000  PCI (00|00:02.00) : 8086 1916 class=030000
+0:955  0:000   - GOP: Provided by device
+0:955  0:000   - GFX: Model=Intel HD Graphics 520 (Intel)
+0:955  0:000  PCI (00|00:04.00) : 8086 1903 class=118000
+0:956  0:000  PCI (00|00:14.00) : 8086 9D2F class=0C0330
+0:956  0:000  PCI (00|00:14.02) : 8086 9D31 class=118000
+0:956  0:000  PCI (00|00:15.00) : 8086 9D60 class=118000
+0:956  0:000  PCI (00|00:15.01) : 8086 9D61 class=118000
+0:956  0:000  PCI (00|00:16.00) : 8086 9D3A class=078000
+0:956  0:000  PCI (00|00:17.00) : 8086 9D03 class=010601
+0:956  0:000  PCI (00|00:1C.00) : 8086 9D10 class=060400
+0:956  0:000  PCI (00|01:00.00) : 10DE 134F class=030200
+0:956  0:000  PCI (00|00:1C.04) : 8086 9D14 class=060400
+0:956  0:000  PCI (00|02:00.00) : 10EC 8168 class=020000
+0:956  0:000   - LAN: 0 Vendor=Realtek
+0:956  0:000  PCI (00|00:1C.05) : 8086 9D15 class=060400
+0:956  0:000  PCI (00|03:00.00) : 8086 2526 class=028000
+0:956  0:000   - WIFI: Vendor=Intel
+0:956  0:000  PCI (00|00:1F.00) : 8086 9D48 class=060100
+0:956  0:000  PCI (00|00:1F.02) : 8086 9D21 class=058000
+0:956  0:000  PCI (00|00:1F.03) : 8086 9D70 class=040300
+0:956  0:000  PCI (00|00:1F.04) : 8086 9D23 class=0C0500
+0:956  0:000  === [ GetDefaultSettings ] ======================
+0:956  0:000  Clover load options size = 0 bytes
+0:956  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\X456UV--00-00-00-00-00-00. Dir not exists
+0:956  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\X456UV\UEFI. Dir not exists
+0:956  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\X456UV. Dir not exists
+0:956  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\X456UV-2200. Dir not exists
+0:956  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\X456UV. Dir not exists
+0:956  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\X456UV-2200. Dir not exists
+0:956  0:000  set OEMPath by default: EFI\CLOVER
+0:957  0:001  EFI\CLOVER\config.plist loaded: Success
+0:962  0:004  === [ GetListOfThemes ] =========================
+0:963  0:001  - [00]: Simple
+0:964  0:000  === [ Found config plists ] =====================
+0:964  0:000  - config-initial.plist
+0:964  0:000  - config.plist
+0:964  0:000  - config_10.14.plist
+0:964  0:000  === [ GetEarlyUserSettings ] ====================
+0:964  0:000  timeout set to 5
+0:964  0:000  Custom boot CUSTOM_BOOT_DISABLED (0x0)
+0:964  0:000  KextsToPatch: 2 requested
+0:964  0:000   - [00]: AppleAHCIPort (External icons patch) :: BinPatch :: data len: 8
+0:964  0:000   - [01]: com.apple.driver.AppleIntelSKLGraphicsFramebuffer (0x19160000/etc, 32MB BIOS, 19MB framebuffer 9MB cursor bytes (credit RehabMan)) :: BinPatch :: data len: 8
+0:964  0:000  Default theme: Simple
+0:964  0:000  Hiding entries with string Preboot
+0:964  0:000  Hiding entries with string Recovery
+0:964  0:000  Hiding entries with string Microsoft EFI Boot
+0:964  0:000  === [ LoadDrivers ] =============================
+0:966  0:001  Loading apfs.efi  status=Success
+0:969  0:003   - driver needs connecting
+0:969  0:000  Loading ApfsDriverLoader.efi  status=Success
+0:969  0:000   - driver needs connecting
+0:969  0:000  Loading AppleKeyFeeder.efi  status=Success
+0:970  0:000  Loading AppleUITheme.efi  status=Success
+0:970  0:000  Loading AptioInputFix-64.efi  status=Success
+1:071  0:101  Loading AptioMemoryFix-64.efi  status=Success
+1:172  0:100  Loading EmuVariableUefi.efi  status=Success
+1:173  0:000  EmuVariableUefi Initialize: VariableCommonInitialize = Success, orig services stored, install gEmuVariableControlProtocolGuid = Success
+1:173  0:000  Loading Fat.efi  status=Success
+1:173  0:000   - driver needs connecting
+1:173  0:000  Loading FSInject-64.efi  status=Success
+1:174  0:000  Loading HFSPlus.efi  status=Success
+1:174  0:000   - driver needs connecting
+1:174  0:000  Loading NTFS.efi  status=Success
+1:176  0:001   - driver needs connecting
+1:176  0:000  Loading VirtualSmc.efi  status=Success
+1:279  0:102  5 drivers needs connecting ...
+1:279  0:000  PlatformDriverOverrideProtocol not found. Installing ... Success
+1:279  0:000  HFS+ driver loaded
+1:279  0:000  APFS driver loaded
+1:279  0:000  Searching for invalid DiskIo BY_DRIVER connects: not found, all ok
+6:110  4:831  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+6:127  0:017  === [ InitScreen ] ==============================
+6:127  0:000  Console modes reported: 4, available modes:
+6:127  0:000   - [01]: 80x25
+6:127  0:000   - [02]: 80x25
+6:127  0:000   - [03]: 100x31 (current mode)
+6:127  0:000   - [04]: 170x40
+6:127  0:000  SetScreenResolution: 1360x768 - not found!
+6:127  0:000  SetMaxResolution: found best mode 0: 1366x768
+6:127  0:000   - already set
+6:127  0:000  SetScreenResolution: 1366x768 - already set
+6:127  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,31A9E8F0-43D7-4CCC-9FDB-4EC2FDBFFD47,0x1000,0x96000)
+6:127  0:000  new SelfHandle=73DCA798
+6:130  0:002  Using embedded font: Success
+6:132  0:001  === [ GetMacAddress ] ===========================
+6:132  0:000  MAC address of LAN #0= 34:97:F6:C9:CE:C5:
+6:132  0:000  === [ ScanSPD ] =================================
+6:132  0:000  Scanning SMBus [8086:9D23], mmio: 0xDF332004, ioport: 0xF040, hostc: 0x11
+6:151  0:018  Slot: 2 Type 26 4096MB 2134MHz Vendor=Kingston PartNo=KHX2133C13S44G SerialNo=0B0C0100020E0907
+6:151  0:000  === [ GetAcpiTablesList ] =======================
+6:156  0:004  Get Acpi Tables List from RSDT:
+6:156  0:000   - [00]: FACP  Notebook len=132
+6:156  0:000   - [01]: APIC  Notebook len=132
+6:156  0:000   - [02]: FPDT  Notebook len=68
+6:156  0:000   - [03]: FIDT  Notebook len=156
+6:156  0:000   - [04]: MCFG  Notebook len=60
+6:156  0:000   - [05]: HPET  Notebook len=56
+6:156  0:000   - [06]: SSDT  SataTabl len=789
+6:156  0:000   - [07]: ECDT  Notebook len=193
+6:156  0:000   - [08]: LPIT  SKL-ULT len=148
+6:156  0:000   - [09]: SSDT  sensrhub len=584
+6:156  0:000   - [10]: DBGP   len=52
+6:156  0:000   - [11]: DBG2   len=84
+6:156  0:000   - [12]: SSDT  DptfTabl len=15720
+6:156  0:000   - [13]: SSDT  SaSsdt  len=22658
+6:156  0:000   - [14]: UEFI   len=66
+6:156  0:000   - [15]: SSDT  CpuSsdt len=3699
+6:156  0:000   - [16]: SSDT  SgPch len=1966
+6:156  0:000   - [17]: DMAR  SKL  len=240
+6:156  0:000   - [18]: BGRT  Notebook len=56
+6:156  0:000   - [19]: SSDT  OptTabl len=6776
+6:156  0:000   - [20]: MSDM  Notebook len=85
+6:156  0:000  Calibrated TSC Frequency = 2400339500 = 2400MHz
+6:157  0:000  === [ GetUserSettings ] =========================
+6:157  0:000  USB FixOwnership: yes
+6:157  0:000  Dropping 2 tables:
+6:157  0:000   - [00]: Drop table  signature="DMAR" (52414D44)
+6:157  0:000           - set table: 52414D44,                0 to drop: yes
+6:157  0:000   - [01]: Drop table  signature="MATS" (5354414D)
+6:157  0:000           - set table: 5354414D,                0 to drop: no
+6:157  0:000   - final DSDT Fix mask=01020004
+6:157  0:000  PatchesDSDT: 5 requested
+6:157  0:000   - [00]: (change SAT0 to SATA) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+6:157  0:000   - [01]: (change GFX0 to IGPU) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+6:157  0:000   - [02]: (change EC0 to EC) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+6:157  0:000   - [03]: (change H_EC to EC) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+6:157  0:000   - [04]: (change ECDV to EC) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+6:157  0:000  Using ProductName from config: MacBookPro13,2
+6:157  0:000  Using latest BiosVersion from config
+6:157  0:000  BiosVersion: MBP132.88Z.F000.B00.1912161510
+6:157  0:000  BiosReleaseDate: 12/16/2019
+6:157  0:000  Using latest EfiVersion from clover: 265.0.0.0.0
+6:157  0:000  Using FirmwareFeatures from config: 0xFC0FE176
+6:157  0:000  Using FirmwareFeaturesMask from config: 0xFF1FFF7F
+6:157  0:000  Board-ID set from config as Mac-66E35819EE2D0D05
+6:157  0:000  BoardType: 0xA
+6:157  0:000  ChassisType: 0x9
+6:157  0:000  Converted CustomUUID 1E0CF759-7F5B-5160-8473-9B66803890CD
+6:157  0:000  === [ Found DSDT tables ] =======================
+7:020  0:862  === [ ScanVolumes ] =============================
+7:020  0:000  Found 22 volumes with blockIO
+7:020  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xC,0x0)
+7:223  0:203          Result of bootcode detection: bootable Linux (grub,linux)
+7:223  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xC,0x0)\HD(1,MBR,0xAEC0E443,0x800,0xC8000000)
+7:230  0:007          Result of bootcode detection: bootable Windows (vista,win)
+7:242  0:012  - [02]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xC,0x0)\HD(2,MBR,0xAEC0E443,0xCAE07800,0x1DFFF800)
+7:243  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xC,0x0)\HD(3,MBR,0xAEC0E443,0xC8000800,0x2E07000)
+7:244  0:000          Result of bootcode detection: bootable unknown (legacy)
+7:244  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)
+7:245  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)
+7:246  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,31A9E8F0-43D7-4CCC-9FDB-4EC2FDBFFD47,0x1000,0x96000)
+7:246  0:000          Result of bootcode detection: bootable Windows (vista,win)
+7:246  0:000          This is SelfVolume !!
+7:246  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,BEB1965D-D869-402F-A9CE-43EBEB31B503,0x97000,0x40000)
+7:247  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,F937683F-FB96-4966-BA70-3D08CD596597,0x353A20,0xA000000)
+7:248  0:000          Result of bootcode detection: bootable Windows (vista,win)
+7:248  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,67D09AA3-C03F-4FFC-8881-6A14F3675BFA,0xA353A20,0x6AE0080)
+7:249  0:000          Result of bootcode detection: bootable Windows (vista,win)
+7:250  0:001  - [10]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C02D7548-DA13-49B5-9C00-D93BE6049090,0x10E33AA0,0x2EF09EF)
+7:250  0:000          Result of bootcode detection: bootable Windows (vista,win)
+7:251  0:000  - [11]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)
+7:252  0:000          Result of bootcode detection: bootable unknown (legacy)
+7:252  0:000  - [12]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,3B0342BB-9819-4046-93EF-8F99B74C3A27,0x1B5D4800,0x94F800)
+7:252  0:000          Result of bootcode detection: bootable unknown (legacy)
+7:252  0:000  - [13]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(1,GPT,48AA1546-5498-47D2-AEA4-499777497FF1,0x28,0x1EB85FE8)
+7:253  0:000          Result of bootcode detection: bootable Windows (vista,win)
+7:339  0:086  - [14]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(2,GPT,1B695414-05E8-46BE-92A3-7F7D1813EA28,0x1EB86010,0xBE007F0)
+7:356  0:016          Result of bootcode detection: bootable Windows (vista,win)
+7:356  0:000  - [15]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(3,GPT,0940C84D-2B50-4B49-9A86-0700CA5D04CF,0x2A986800,0xC800000)
+7:356  0:000          Result of bootcode detection: bootable unknown (legacy)
+7:356  0:000  - [16]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(4,GPT,54754165-A515-477D-A92D-59CB89BF8FB1,0x37186800,0x31FF800)
+7:357  0:000  - [17]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,AFA43CDF88706A4D9318008AEEEB2ED6)
+7:357  0:000          hiding this volume
+7:357  0:000  - [18]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BCF9571C087DCA4782168B163543C187)
+7:358  0:000  - [19]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,AB1E8999D37C744FAFA8AFC409760FB9)
+7:358  0:000          hiding this volume
+7:358  0:000  - [20]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,227460E7CFE61B47A0EE51D6AFBCDDD7)
+7:358  0:000  - [21]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,81B326BB86A8A7498D20C84057281AB8)
+7:359  0:000  Searching volumes for latest nvram.plist ...
+7:366  0:007  loaded Status=Not Found
+7:366  0:000  PutNvramPlistToRtVars: nvram.plist not found
+7:366  0:000  No AudioIoProtocols, status=Not Found
+7:366  0:000  === [ InitTheme ] ===============================
+7:366  0:000  use daylight theme
+7:375  0:008  Using theme 'Simple' (EFI\CLOVER\themes\Simple)
+7:375  0:000  OS main and drive as badge
+7:375  0:000  file sound read: sound.wav Not Found
+7:379  0:003  Loading font from ThemeDir: Success
+7:379  0:000  theme inited
+7:379  0:000  Chosen theme Simple
+7:379  0:000  after NVRAM boot-args=nv_disable=1 kext-dev-mode=1
+7:379  0:000  === [ Dump SMC keys from NVRAM ] ================
+7:379  0:000  found AppleSMC protocol
+7:380  0:000  === [ ScanLoader ] ==============================
+7:380  0:000  - [01]: 'movingDisk'
+7:421  0:040  - [06]: 'EFI'
+7:421  0:000          AddLoaderEntry for Volume Name=EFI
+7:423  0:001          [!] Icon 19 (icons\vol_internal_ntfs.icns) not found (path: EFI\CLOVER\themes\Simple)
+7:426  0:002          AddLoaderEntry for Volume Name=EFI
+7:426  0:000          skipped because entry is hidden
+7:426  0:000  - [08]: 'win10'
+7:437  0:011  - [09]: 'oö'
+7:459  0:022  - [10]: '‡c'
+7:471  0:011  - [13]: 'f`D™'
+7:482  0:011  - [17]: 'Preboot', hidden
+7:482  0:000  - [18]: 'Mac - Data'
+7:502  0:019  - [19]: 'Recovery', hidden
+7:502  0:000  - [20]: 'VM'
+7:502  0:000  - [21]: 'Mac'
+7:570  0:067          AddLoaderEntry for Volume Name=Mac
+7:588  0:018      Check if volume Is Hibernated:
+7:588  0:000      Check sleep image 'by signature':
+7:594  0:005      using default sleep image name = \private\var\vm\sleepimage
+7:595  0:001      sleepimage not found -> Not Found
+7:595  0:000      hibernated: no - sign
+7:595  0:000          [!] Icon 18 (icons\vol_internal_apfs.icns) not found (path: EFI\CLOVER\themes\Simple)
+7:602  0:006  === [ AddCustomTool ] ===========================
+7:603  0:001  found tool \EFI\CLOVER\tools\Shell64U.efi
+7:603  0:000  Checking EFI partition Volume 6 for Clover
+7:603  0:000   Found Clover
+7:603  0:000  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+7:604  0:000  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+7:622  0:017  === [ GetEfiBootDeviceFromNvram ] ===============
+7:622  0:000   - found entry 1. 'Boot macOS from Mac', Volume 'Mac', DevicePath 'PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,81B326BB86A8A7498D20C84057281AB8)\System\Library\CoreServices\boot.efii'
+7:622  0:000  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+7:622  0:000  DefaultIndex=1 and MainMenu.Entries.size()=8
+8:088  0:466  GUI ready
+11:290  3:201  Found BIOS RSDP at F0070
+11:290  0:000  Printing ACPI tables from RSDP F0070 ...
+11:290  0:000   F0070: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+11:290  0:000    (Xsdt: 766180A8, Rsdt: 76618028)
+11:290  0:000    766180A8: 'XSDT', 'Notebook', Rev: 1, Len: 204
+11:290  0:000    76618028: 'RSDT', 'Notebook', Rev: 1, Len: 120
+11:290  0:000    Tables in Xsdt: 21
+11:290  0:000    0. 7663E450: 'FACP', 'Notebook', Rev: 5, Len: 268
+11:290  0:000        (Dsdt: 76618200, Facs: 770B2F80, XDsdt: 76618200, XFacs: 0)
+11:290  0:000        76618200: 'DSDT', 'Notebook', Rev: 2, Len: 156235
+11:292  0:002        770B2F80: 'FACS', Ver: 2, Len: 64
+11:292  0:000    1. 7663E560: 'APIC', 'Notebook', Rev: 3, Len: 132
+11:292  0:000    2. 7663E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68
+11:292  0:000    3. 7663E630: 'FIDT', 'Notebook', Rev: 1, Len: 156
+11:292  0:000    4. 7663E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60
+11:292  0:000    5. 7663E710: 'HPET', 'Notebook', Rev: 1, Len: 56
+11:292  0:000    6. 7663E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+11:292  0:000    7. 7663EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193
+11:292  0:000    8. 7663EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148
+11:292  0:000    9. 7663EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+11:292  0:000    10. 7663EE08: 'DBGP', '', Rev: 1, Len: 52
+11:292  0:000    11. 7663EE40: 'DBG2', '', Rev: 0, Len: 84
+11:292  0:000    12. 7663EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720
+11:292  0:000    13. 76642C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658
+11:292  0:000    14. 76648488: 'UEFI', '', Rev: 1, Len: 66
+11:292  0:000    15. 766484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+11:292  0:000    16. 76649348: 'SSDT', 'SgPch', Rev: 2, Len: 1966
+11:292  0:000    17. 76649AF8: 'DMAR', 'SKL', Rev: 1, Len: 240
+11:292  0:000    18. 76649BE8: 'BGRT', 'Notebook', Rev: 1, Len: 56
+11:292  0:000    19. 76649C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776
+11:292  0:000    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85
+11:292  0:000    Tables in Rsdt: 21
+11:292  0:000    0. 76618178: 'FACP', 'Notebook', Rev: 2, Len: 132
+11:292  0:000        (Dsdt: 76618200, Facs: 770B2F40)
+11:292  0:000        76618200: 'DSDT', 'Notebook', Rev: 2, Len: 156235
+11:295  0:002        770B2F40: 'FACS', Ver: 0, Len: 64
+11:295  0:000    1. 7663E560: 'APIC', 'Notebook', Rev: 3, Len: 132
+11:295  0:000    2. 7663E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68
+11:295  0:000    3. 7663E630: 'FIDT', 'Notebook', Rev: 1, Len: 156
+11:295  0:000    4. 7663E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60
+11:295  0:000    5. 7663E710: 'HPET', 'Notebook', Rev: 1, Len: 56
+11:295  0:000    6. 7663E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+11:295  0:000    7. 7663EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193
+11:295  0:000    8. 7663EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148
+11:295  0:000    9. 7663EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+11:295  0:000    10. 7663EE08: 'DBGP', '', Rev: 1, Len: 52
+11:295  0:000    11. 7663EE40: 'DBG2', '', Rev: 0, Len: 84
+11:295  0:000    12. 7663EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720
+11:295  0:000    13. 76642C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658
+11:295  0:000    14. 76648488: 'UEFI', '', Rev: 1, Len: 66
+11:295  0:000    15. 766484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+11:295  0:000    16. 76649348: 'SSDT', 'SgPch', Rev: 2, Len: 1966
+11:295  0:000    17. 76649AF8: 'DMAR', 'SKL', Rev: 1, Len: 240
+11:295  0:000    18. 76649BE8: 'BGRT', 'Notebook', Rev: 1, Len: 56
+11:295  0:000    19. 76649C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776
+11:295  0:000    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85
+11:295  0:000  Found UEFI Acpi 2.0 RSDP at 76618000
+11:295  0:000  Saving ACPI tables from RSDP 76618000 to EFI\CLOVER\ACPI\origin ...
+11:295  0:000   76618000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+11:311  0:016    (Xsdt: 766180A8, Rsdt: 76618028)
+11:311  0:000    766180A8: 'XSDT', 'Notebook', Rev: 1, Len: 204 -> XSDT.aml
+11:321  0:009    76618028: 'RSDT', 'Notebook', Rev: 1, Len: 120 -> RSDT.aml
+11:331  0:010    Tables in Xsdt: 21
+11:331  0:000    0. 7663E450: 'FACP', 'Notebook', Rev: 5, Len: 268 -> FACP.aml
+11:340  0:009        (Dsdt: 76618200, Facs: 770B2F80, XDsdt: 76618200, XFacs: 0)
+11:340  0:000        76618200: 'DSDT', 'Notebook', Rev: 2, Len: 156235 -> DSDT.aml
+11:363  0:022        770B2F80: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+11:372  0:009    1. 7663E560: 'APIC', 'Notebook', Rev: 3, Len: 132 -> APIC.aml
+11:381  0:009    2. 7663E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68 -> FPDT.aml
+11:391  0:009    3. 7663E630: 'FIDT', 'Notebook', Rev: 1, Len: 156 -> FIDT.aml
+11:401  0:009    4. 7663E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60 -> MCFG.aml
+11:410  0:009    5. 7663E710: 'HPET', 'Notebook', Rev: 1, Len: 56 -> HPET.aml
+11:420  0:009    6. 7663E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789 -> SSDT-0-SataTabl.aml
+11:439  0:019    7. 7663EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193 -> ECDT.aml
+11:449  0:009    8. 7663EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148 -> LPIT.aml
+11:458  0:009    9. 7663EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584 -> SSDT-1-sensrhub.aml
+11:468  0:009    10. 7663EE08: 'DBGP', '', Rev: 1, Len: 52 -> DBGP.aml
+11:477  0:009    11. 7663EE40: 'DBG2', '', Rev: 0, Len: 84 -> DBG2.aml
+11:488  0:010    12. 7663EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720 -> SSDT-2-DptfTabl.aml
+11:500  0:011    13. 76642C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658 -> SSDT-3-SaSsdt.aml
+11:511  0:010    14. 76648488: 'UEFI', '', Rev: 1, Len: 66 -> UEFI.aml
+11:520  0:009    15. 766484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699 -> SSDT-4-CpuSsdt.aml (Found hidden SSDT 7 pcs)
+11:530  0:009        * 75436698: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1566  53 53 44 54 1E 06 00 00 02 B7 50 6D 52 65 66 00 Internal length = 1566 -> SSDT-x4_0-Cpu0Ist.aml
+11:540  0:009        * 75435618: 'SSDT', 'ApIst', Rev: 2, Len: 1450  53 53 44 54 AA 05 00 00 02 CE 50 6D 52 65 66 00 Internal length = 1450 -> SSDT-x4_1-ApIst.aml
+11:549  0:009        * 75435C18: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 895  53 53 44 54 7F 03 00 00 02 65 50 6D 52 65 66 00 Internal length = 895 -> SSDT-x4_2-Cpu0Cst.aml
+11:559  0:009        * 75C18A98: 'SSDT', 'ApCst', Rev: 2, Len: 281  53 53 44 54 19 01 00 00 02 EA 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x4_3-ApCst.aml
+11:568  0:009        * 75C18F18: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 142  53 53 44 54 8E 00 00 00 02 2B 50 6D 52 65 66 00 Internal length = 142 -> SSDT-x4_4-Cpu0Hwp.aml
+11:578  0:009        * 75C18918: 'SSDT', 'ApHwp', Rev: 2, Len: 281  53 53 44 54 19 01 00 00 02 FD 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x4_5-ApHwp.aml
+11:588  0:009        * 75C18C18: 'SSDT', 'HwpLvt', Rev: 2, Len: 304  53 53 44 54 30 01 00 00 02 85 50 6D 52 65 66 00 Internal length = 304 -> SSDT-x4_6-HwpLvt.aml
+11:597  0:009  
+11:597  0:000    16. 76649348: 'SSDT', 'SgPch', Rev: 2, Len: 1966 -> SSDT-5-SgPch.aml
+11:607  0:009    17. 76649AF8: 'DMAR', 'SKL', Rev: 1, Len: 240 -> DMAR.aml
+11:617  0:009    18. 76649BE8: 'BGRT', 'Notebook', Rev: 1, Len: 56 -> BGRT.aml
+11:626  0:009    19. 76649C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776 -> SSDT-6-OptTabl.aml
+11:636  0:009    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85 -> MSDM.aml
+11:646  0:010    Tables in Rsdt: 21
+11:646  0:000    0. 76618178: 'FACP', 'Notebook', Rev: 2, Len: 132 -> RSDT-FACP.aml
+11:656  0:009        (Dsdt: 76618200, Facs: 770B2F40)
+11:656  0:000        76618200: 'DSDT', 'Notebook', Rev: 2, Len: 156235
+11:658  0:002        770B2F40: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+11:668  0:009    1. 7663E560: 'APIC', 'Notebook', Rev: 3, Len: 132
+11:668  0:000    2. 7663E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68
+11:668  0:000    3. 7663E630: 'FIDT', 'Notebook', Rev: 1, Len: 156
+11:668  0:000    4. 7663E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60
+11:668  0:000    5. 7663E710: 'HPET', 'Notebook', Rev: 1, Len: 56
+11:668  0:000    6. 7663E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+11:668  0:000    7. 7663EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193
+11:668  0:000    8. 7663EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148
+11:668  0:000    9. 7663EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+11:668  0:000    10. 7663EE08: 'DBGP', '', Rev: 1, Len: 52
+11:668  0:000    11. 7663EE40: 'DBG2', '', Rev: 0, Len: 84
+11:668  0:000    12. 7663EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720
+11:668  0:000    13. 76642C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658
+11:668  0:000    14. 76648488: 'UEFI', '', Rev: 1, Len: 66
+11:668  0:000    15. 766484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+11:668  0:000    16. 76649348: 'SSDT', 'SgPch', Rev: 2, Len: 1966
+11:668  0:000    17. 76649AF8: 'DMAR', 'SKL', Rev: 1, Len: 240
+11:668  0:000    18. 76649BE8: 'BGRT', 'Notebook', Rev: 1, Len: 56
+11:668  0:000    19. 76649C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776
+11:668  0:000    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85
+11:668  0:000  Found UEFI Acpi 1.0 RSDP at 76618000
+11:668  0:000  Printing ACPI tables from RSDP 76618000 ...
+11:668  0:000   76618000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+11:668  0:000    (Xsdt: 766180A8, Rsdt: 76618028)
+11:668  0:000    766180A8: 'XSDT', 'Notebook', Rev: 1, Len: 204
+11:668  0:000    76618028: 'RSDT', 'Notebook', Rev: 1, Len: 120
+11:668  0:000    Tables in Xsdt: 21
+11:668  0:000    0. 7663E450: 'FACP', 'Notebook', Rev: 5, Len: 268
+11:668  0:000        (Dsdt: 76618200, Facs: 770B2F80, XDsdt: 76618200, XFacs: 0)
+11:668  0:000        76618200: 'DSDT', 'Notebook', Rev: 2, Len: 156235
+11:670  0:002        770B2F80: 'FACS', Ver: 2, Len: 64
+11:670  0:000    1. 7663E560: 'APIC', 'Notebook', Rev: 3, Len: 132
+11:670  0:000    2. 7663E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68
+11:670  0:000    3. 7663E630: 'FIDT', 'Notebook', Rev: 1, Len: 156
+11:670  0:000    4. 7663E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60
+11:670  0:000    5. 7663E710: 'HPET', 'Notebook', Rev: 1, Len: 56
+11:670  0:000    6. 7663E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+11:670  0:000    7. 7663EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193
+11:670  0:000    8. 7663EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148
+11:670  0:000    9. 7663EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+11:670  0:000    10. 7663EE08: 'DBGP', '', Rev: 1, Len: 52
+11:670  0:000    11. 7663EE40: 'DBG2', '', Rev: 0, Len: 84
+11:670  0:000    12. 7663EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720
+11:670  0:000    13. 76642C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658
+11:670  0:000    14. 76648488: 'UEFI', '', Rev: 1, Len: 66
+11:670  0:000    15. 766484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+11:670  0:000    16. 76649348: 'SSDT', 'SgPch', Rev: 2, Len: 1966
+11:670  0:000    17. 76649AF8: 'DMAR', 'SKL', Rev: 1, Len: 240
+11:670  0:000    18. 76649BE8: 'BGRT', 'Notebook', Rev: 1, Len: 56
+11:670  0:000    19. 76649C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776
+11:670  0:000    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85
+11:670  0:000    Tables in Rsdt: 21
+11:670  0:000    0. 76618178: 'FACP', 'Notebook', Rev: 2, Len: 132
+11:670  0:000        (Dsdt: 76618200, Facs: 770B2F40)
+11:670  0:000        76618200: 'DSDT', 'Notebook', Rev: 2, Len: 156235
+11:673  0:002        770B2F40: 'FACS', Ver: 0, Len: 64
+11:673  0:000    1. 7663E560: 'APIC', 'Notebook', Rev: 3, Len: 132
+11:673  0:000    2. 7663E5E8: 'FPDT', 'Notebook', Rev: 1, Len: 68
+11:673  0:000    3. 7663E630: 'FIDT', 'Notebook', Rev: 1, Len: 156
+11:673  0:000    4. 7663E6D0: 'MCFG', 'Notebook', Rev: 1, Len: 60
+11:673  0:000    5. 7663E710: 'HPET', 'Notebook', Rev: 1, Len: 56
+11:673  0:000    6. 7663E748: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+11:673  0:000    7. 7663EA60: 'ECDT', 'Notebook', Rev: 1, Len: 193
+11:673  0:000    8. 7663EB28: 'LPIT', 'SKL-ULT', Rev: 1, Len: 148
+11:673  0:000    9. 7663EBC0: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+11:673  0:000    10. 7663EE08: 'DBGP', '', Rev: 1, Len: 52
+11:673  0:000    11. 7663EE40: 'DBG2', '', Rev: 0, Len: 84
+11:673  0:000    12. 7663EE98: 'SSDT', 'DptfTabl', Rev: 2, Len: 15720
+11:673  0:000    13. 76642C00: 'SSDT', 'SaSsdt', Rev: 2, Len: 22658
+11:673  0:000    14. 76648488: 'UEFI', '', Rev: 1, Len: 66
+11:673  0:000    15. 766484D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+11:673  0:000    16. 76649348: 'SSDT', 'SgPch', Rev: 2, Len: 1966
+11:673  0:000    17. 76649AF8: 'DMAR', 'SKL', Rev: 1, Len: 240
+11:673  0:000    18. 76649BE8: 'BGRT', 'Notebook', Rev: 1, Len: 56
+11:673  0:000    19. 76649C20: 'SSDT', 'OptTabl', Rev: 1, Len: 6776
+11:673  0:000    20. 75C3CF18: 'MSDM', 'Notebook', Rev: 3, Len: 85
+12:485  0:812  exit from MainMenu 8
+12:485  0:000  ReinitSelfLib after theme change
+12:485  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,31A9E8F0-43D7-4CCC-9FDB-4EC2FDBFFD47,0x1000,0x96000)
+12:485  0:000  new SelfHandle=73DCA798
+12:485  0:000  === [ ScanVolumes ] =============================
+12:485  0:000  Found 22 volumes with blockIO
+12:485  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xC,0x0)
+12:487  0:002          Result of bootcode detection: bootable Linux (grub,linux)
+12:487  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xC,0x0)\HD(1,MBR,0xAEC0E443,0x800,0xC8000000)
+12:490  0:002          Result of bootcode detection: bootable Windows (vista,win)
+12:494  0:004  - [02]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xC,0x0)\HD(2,MBR,0xAEC0E443,0xCAE07800,0x1DFFF800)
+12:496  0:002  - [03]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xC,0x0)\HD(3,MBR,0xAEC0E443,0xC8000800,0x2E07000)
+12:498  0:002          Result of bootcode detection: bootable unknown (legacy)
+12:498  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)
+12:499  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)
+12:499  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,31A9E8F0-43D7-4CCC-9FDB-4EC2FDBFFD47,0x1000,0x96000)
+12:500  0:000          Result of bootcode detection: bootable Windows (vista,win)
+12:500  0:000          This is SelfVolume !!
+12:500  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,BEB1965D-D869-402F-A9CE-43EBEB31B503,0x97000,0x40000)
+12:501  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,F937683F-FB96-4966-BA70-3D08CD596597,0x353A20,0xA000000)
+12:501  0:000          Result of bootcode detection: bootable Windows (vista,win)
+12:502  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,67D09AA3-C03F-4FFC-8881-6A14F3675BFA,0xA353A20,0x6AE0080)
+12:502  0:000          Result of bootcode detection: bootable Windows (vista,win)
+12:504  0:001  - [10]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C02D7548-DA13-49B5-9C00-D93BE6049090,0x10E33AA0,0x2EF09EF)
+12:504  0:000          Result of bootcode detection: bootable Windows (vista,win)
+12:505  0:000  - [11]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)
+12:505  0:000          Result of bootcode detection: bootable unknown (legacy)
+12:505  0:000  - [12]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,3B0342BB-9819-4046-93EF-8F99B74C3A27,0x1B5D4800,0x94F800)
+12:506  0:000          Result of bootcode detection: bootable unknown (legacy)
+12:506  0:000  - [13]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(1,GPT,48AA1546-5498-47D2-AEA4-499777497FF1,0x28,0x1EB85FE8)
+12:507  0:000          Result of bootcode detection: bootable Windows (vista,win)
+12:507  0:000  - [14]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(2,GPT,1B695414-05E8-46BE-92A3-7F7D1813EA28,0x1EB86010,0xBE007F0)
+12:508  0:000          Result of bootcode detection: bootable Windows (vista,win)
+12:508  0:000  - [15]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(3,GPT,0940C84D-2B50-4B49-9A86-0700CA5D04CF,0x2A986800,0xC800000)
+12:508  0:000          Result of bootcode detection: bootable unknown (legacy)
+12:508  0:000  - [16]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(4,GPT,54754165-A515-477D-A92D-59CB89BF8FB1,0x37186800,0x31FF800)
+12:509  0:000  - [17]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,AFA43CDF88706A4D9318008AEEEB2ED6)
+12:509  0:000  - [18]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BCF9571C087DCA4782168B163543C187)
+12:510  0:000  - [19]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,AB1E8999D37C744FAFA8AFC409760FB9)
+12:511  0:000  - [20]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,227460E7CFE61B47A0EE51D6AFBCDDD7)
+12:511  0:000  - [21]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,81B326BB86A8A7498D20C84057281AB8)
+12:512  0:001  No AudioIoProtocols, status=Not Found
+12:512  0:000  theme inited
+12:512  0:000  Chosen theme Simple
+12:512  0:000  after NVRAM boot-args=nv_disable=1 kext-dev-mode=1
+12:512  0:000  === [ ScanLoader ] ==============================
+12:512  0:000  - [01]: 'movingDisk'
+12:604  0:092  - [06]: 'EFI'
+12:604  0:000          AddLoaderEntry for Volume Name=EFI
+12:604  0:000          AddLoaderEntry for Volume Name=EFI
+12:605  0:000          [!] Icon 12 (icons\vol_internal.icns) not found (path: EFI\CLOVER\themes\Simple)
+12:605  0:000  - [08]: 'win10'
+12:616  0:011  - [09]: 'oö'
+12:649  0:032  - [10]: '‡c'
+12:660  0:011  - [13]: 'f`D™'
+12:671  0:011  - [17]: 'Preboot'
+12:683  0:011          AddLoaderEntry for Volume Name=Preboot
+12:695  0:012      Check if volume Is Hibernated:
+12:695  0:000      Check sleep image 'by signature':
+12:696  0:000      using default sleep image name = \private\var\vm\sleepimage
+12:697  0:000      sleepimage not found -> Not Found
+12:697  0:000      hibernated: no - sign
+12:703  0:006  - [18]: 'Mac - Data'
+12:726  0:023  - [19]: 'Recovery'
+12:735  0:009          AddLoaderEntry for Volume Name=Recovery
+12:741  0:005          [!] Icon 21 (icons\vol_recovery.icns) not found (path: EFI\CLOVER\themes\Simple)
+12:746  0:005  - [20]: 'VM'
+12:747  0:000  - [21]: 'Mac'
+12:811  0:064          AddLoaderEntry for Volume Name=Mac
+12:827  0:015      Check if volume Is Hibernated:
+12:827  0:000      Check sleep image 'by signature':
+12:833  0:006      using default sleep image name = \private\var\vm\sleepimage
+12:835  0:002      sleepimage not found -> Not Found
+12:835  0:000      hibernated: no - sign
+12:844  0:008  === [ AddCustomTool ] ===========================
+12:844  0:000  found tool \EFI\CLOVER\tools\Shell64U.efi
+12:844  0:000  Checking EFI partition Volume 6 for Clover
+12:844  0:000   Found Clover
+12:844  0:000  EmuVariable UninstallEmulation: CloseEvent = Invalid Parameter, original var services restored
+12:844  0:000  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+12:862  0:017  === [ GetEfiBootDeviceFromNvram ] ===============
+12:862  0:000   - found entry 4. 'Boot macOS from Mac', Volume 'Mac', DevicePath 'PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,7531148D-261E-4BA1-99C6-8BCC1131D147,0x13D24800,0x78AF988)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,81B326BB86A8A7498D20C84057281AB8)\System\Library\CoreServices\boot.efii'
+12:862  0:000  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+12:862  0:000  DefaultIndex=4 and MainMenu.Entries.size()=11
