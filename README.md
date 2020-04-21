@@ -19,11 +19,8 @@
 1. 完成度：大概、应该、也许、Maybe 90%。
 2. 若安装 `Mojave 10.14.5` 请务必保证磁盘至少有 `25GB` 的空间。建议容量：尝鲜(40GB),长期使用(60GB+)。
 3. 镜像来自 [黑果小兵](https://blog.daliansky.net/)，感谢大佬提供的镜像和十分硬核的教程。
-4. 请安装完成 **后** 再进行EFI替换。
-5. 部分可能用得到的工具已上传 [百度云](https://pan.baidu.com/s/10DGeGL3vFaZgCVVZD2OZRA) 
-提取码：0kiv。
-6. 当遇到无法引导时请尝试使用 `config_init.plist` 进行引导。
-7. 请务必使用USB2.0口进行操作系统安装(包括Windows和Linux)
+4. 安装无法引导时请尝试使用 `config_init.plist` 进行引导。
+5. 请务必使用USB2.0口进行操作系统安装(包括Windows和Linux)
 > 10.14**请勿直接升级**10.15。
 
 功能快速预览
@@ -32,7 +29,7 @@
 | CX8050音频     | [x]  |        |              |
 | 核显HD520      | [x]  |        |              |
 | 独显920MX      |      |  [x]   |              |
-| HDMI           |      |  [x]   | 10.15.3 可用 |
+| HDMI           | [x]  |        |              |
 | 有线网卡       | [x]  |        |              |
 | 蓝牙           | [x]  |        | 10.15+ 可用  |
 | WiFi           |      |  [x]   |              |
@@ -45,11 +42,9 @@
 
 
 ## 哪些不能用？
->当你能忍受某个事物所有缺点，那么她一定适合你。
 
 ### 1.独显显卡 `GeForce 920MX`
 笔记本N系1060以下的独显无法驱动，且BIOS无法屏蔽核显。    
->`920MX` 输出单元被屏蔽，也不支持`CUDA`，好像真的没用……
 
 ### ~~2.触控板(请务必外接USB/蓝牙鼠标！)~~
 已修复，感谢[望海之洲](https://www.penghubingzhou.cn)提供的[教程](https://www.penghubingzhou.cn/2019/07/24/VoodooI2C%20DSDT%20Edit%20FAQ/)
@@ -58,22 +53,39 @@
 
 ### 3. WIFI !
 1. 为了160MHz换掉了原配的网卡，持有原卡的朋友试验过 `IO80211FamilyV2.kext` 可以驱动，有需要的充分利用百度下载安装。  
-2. 和我一样换了Intel无线网卡的同学那我只能恭喜你了，你找到了一个了一(shi)战(ji)成(nan)名(ti)的机会。  
-~~目前已知 `AppleIntelWifiAdapt` 能支持无线，GitHub下载编译即可，但该项目基于`10.15` API 开发……~~  
-实践证明 `AppleIntelWifiAdapt` 目前版本无法驱动 `Intel 9260`
+2. 和我一样换了Intel无线网卡的，可以尝试分别尝试这几个驱动
+   1. [adapter](https://github.com/AppleIntelWifi/adapter)  
+   2. [itlwm](https://github.com/zxystd/itlwm)
+   3. [AppleIntelWifiAdapter](https://github.com/zxystd/AppleIntelWifiAdapter)
+>膜拜zxystd大佬!
 
-附： `AppleIntelWiFiMVM` 支持列表(该项目2016年停止维护)
-* Intel&reg; Wireless 3160
-* Intel&reg; Wireless 3165
-* Intel&reg; Wireless 4165
-* Intel&reg; Wireless 7260
-* Intel&reg; Wireless 7265
-* Intel&reg; Wireless 8260
-* NUC on-board wireless for NUC 5i\*RY\*
-* NUC on-board wireless for NUC 6i\*SY\*
+我用的是 `itlwm`   
+加载驱动：
+```shell
+cp -R itlwm.kext /tmp
+sudo chown -R root:wheel /tmp/itlwm.kext
+sudo kextutil /tmp/itlwm.kext;
+```
+日志导出:
+```shell
+log show --last boot | grep 'itlwm' >> ~/Desktop/itlwm.log;
+```
+
+⚠️**注意**：驱动仍然在**开发阶段**有很多BUG，尝鲜需要注意几点：
+1. 请勿放到·SLE·或者使用引导工具加载！
+1. 请勿放到·SLE·或者使用引导工具加载！
+1. 请勿放到·SLE·或者使用引导工具加载！
+2. 第一次加载驱动需要自己手动在网络设置中创建一个网络。
+3. 请将你无线的SSID和密码修改成下面代码中的值。
+4. 若想自己定义SSID和密码请在源码`/itlwm/mac80211.cpp`中约 `2048` 行位置修改，然后重新编译。
+``` c++
+static const char *ssid_name = "ssdt";    //这里改你想要的Wi-Fi名，必须是全英文！
+static const char *ssid_pwd = "zxyssdt112233";  //这里是密码，长度大于8位，建议英文和字母混合
+```
+5. 最后请不要在驱动项目的Issue询问Build和使用方法了，不会咱们就安心等正式版驱动。
 
 ### 4.隔空投送
-没有苹果设备，而且网卡貌似也不支持
+🚫不可用！
 
 ## Intel蓝牙问题
 `10.15` 以前的版本,若蓝牙无法连接/搜索 请从 Windows **热重启** 进入MacOS。  
@@ -81,23 +93,22 @@
 >尽量使用 `1.0.3` 版本,两个驱动一起注入。
 
 ## Fn按键
-1. Fn按键目前`亮度调节`和`禁用触控板`暂时无法使用,可以自己修改DSDT调整  
-2. 另外 `Fn + F1` 休眠建议不要使用。按下之后会立即给`USB`和`键盘`断电，只有`电源键`才能唤醒并且有概率无法唤醒。
+1. Fn按键目前 `亮度调节` 和 `禁用触控板` 暂时无法使用,可以自己修改DSDT调整  
+2. 另外 `Fn + F1` 休眠建议**不使用**! 按下之后会立即给`USB`和`键盘`断电，只有`电源键`才能唤醒并且有概率无法唤醒。
 3. Fn休眠无法唤醒后第一次启动到clover的时候无法正常加载键盘  
    临时解决方案：
    1. 设置默认引导项目
    2. 手动从BIOS引导至Windows
 
 ## HDMI问题
-升级到10.15.4之后HDMI出现了无法使用的情况，且不是个例。  
-有投影需求的建议使用10.15.3，搭配旧版本的EFI使用。  
->如果投影设备支持你可以使用 `隔空投屏` 暂时替代一下
+升级到10.15.4之后HDMI出现了无法使用的情况，删除设备中的属性，重新注入platform-id：`0x19160000`  
+使用hackintool按照10.14方法定制会出现HDIM无法使用，显卡其他功能正常。  
+使用platform-id注入能使用HDMI，但是进rec的时候会无法驱动。  
+>我还在实验新的参数，自己取舍吧。
 
 ## 开启HiDPI支持
 源自 [one-key-hidpi](https://github.com/xzhih/one-key-hidpi) 项目  
-
-> 该脚本还可修复关机花屏的问题  
-> 若需要修复花屏请务必注入EDID
+> 请务必注入EDID
 
 ## NTFS 问题
 **请不要尝试使用任何方法让MacOS对NTFS进行读写！**  
@@ -174,14 +185,6 @@ iasl -ve DSDT.dsl
 1. Clover禁止加载 `AppleIntelLpssI2C.kext` 和 `AppleIntelLpssI2CController.kext` 两个驱动
 2. 从SLE中删除上述文件。
  
-# update for 10.15.3
-
-## 相比10.14的变化
->基本没有变动，主要是修复驱动
-1. ~~HDMI有声音了，虽然声音是笔记本声卡发出的……~~ 升级到 `10.15.4` 时候HDMI炸了，现在只能使用隔空播放……(**有投影需求的慎重请升级**)
-2. 注入了白果三码,**在修改三码之前请勿登录IMessage！**(该码来自互联网可能有大量人使用，封号别来找我)
-3. 蓝牙再也不用从win重启了
-4. Fn按键可以使用了
 
 ## 使用建议
 1. 不要在有重要资料的硬盘安装MacOS
