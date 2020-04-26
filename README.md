@@ -20,8 +20,10 @@
 2. 若安装 `Mojave 10.14.5` 请务必保证磁盘至少有 `25GB` 的空间。建议容量：尝鲜(40GB),长期使用(60GB+)。
 3. 镜像来自 [黑果小兵](https://blog.daliansky.net/)，感谢大佬提供的镜像和十分硬核的教程。
 4. 安装无法引导时请尝试使用 `config_init.plist` 进行引导。
-5. 请务必使用USB2.0口进行操作系统安装(包括Windows和Linux)
-> 10.14**请勿直接升级**10.15。
+5. 请务必使用右侧的**USB2.0**口进行操作系统安装。
+
+> ⚠️10.14**请勿直接升级**10.15。  
+> ⚠️**修改三码之前请勿登陆IMessage等应用**! <font size='1'>封号别来找我/doge</font>
 
 功能快速预览
 | 功能/设备      | 能用 | 不能用 | 备注         |
@@ -49,17 +51,22 @@
 ### ~~2.触控板(请务必外接USB/蓝牙鼠标！)~~
 已修复，感谢[望海之洲](https://www.penghubingzhou.cn)提供的[教程](https://www.penghubingzhou.cn/2019/07/24/VoodooI2C%20DSDT%20Edit%20FAQ/)
 
->clover和win下提取原版DSDT备份在`Other/origin`    
-
 ### 3. WIFI !
 1. 为了160MHz换掉了原配的网卡，持有原卡的朋友试验过 `IO80211FamilyV2.kext` 可以驱动，有需要的充分利用百度下载安装。  
 2. 和我一样换了Intel无线网卡的，可以尝试分别尝试这几个驱动
-   1. [adapter](https://github.com/AppleIntelWifi/adapter)  
-   2. [itlwm](https://github.com/zxystd/itlwm)
-   3. [AppleIntelWifiAdapter](https://github.com/zxystd/AppleIntelWifiAdapter)
->膜拜zxystd大佬!
+   1. [adapter](https://github.com/AppleIntelWifi/adapter)  目前我发连接到wifi 
+   2. [itlwm](https://github.com/zxystd/itlwm) 可以连接
+   3. ~~[AppleIntelWifiAdapter](https://github.com/zxystd/AppleIntelWifiAdapter)~~ 已停止维护
 
 我用的是 `itlwm`   
+⚠️**注意**：驱动仍然在**开发阶段**有很多BUG，尝鲜需要注意几点：
+1. ⚠️请勿放到·SLE·或者使用引导工具加载！
+2. 请修改你的无线的SSID：`ssdt` 和密码：`zxyssdt112233` 。
+3. 若想自己定义SSID和密码请在源码`/itlwm/mac80211.cpp`中约 `2048` 行位置修改，然后重新编译。
+``` c++
+static const char *ssid_name = "ssdt";    //这里改你想要的Wi-Fi名，必须是全英文！
+static const char *ssid_pwd = "zxyssdt112233";  //这里是密码，长度大于8位，建议英文和字母混合
+```
 加载驱动：
 ```shell
 cp -R itlwm.kext /tmp
@@ -71,40 +78,20 @@ sudo kextutil /tmp/itlwm.kext;
 log show --last boot | grep 'itlwm' >> ~/Desktop/itlwm.log;
 ```
 
-⚠️**注意**：驱动仍然在**开发阶段**有很多BUG，尝鲜需要注意几点：
-1. 请勿放到·SLE·或者使用引导工具加载！
-1. 请勿放到·SLE·或者使用引导工具加载！
-1. 请勿放到·SLE·或者使用引导工具加载！
-2. 第一次加载驱动需要自己手动在网络设置中创建一个网络。
-3. 请将你无线的SSID和密码修改成下面代码中的值。
-4. 若想自己定义SSID和密码请在源码`/itlwm/mac80211.cpp`中约 `2048` 行位置修改，然后重新编译。
-``` c++
-static const char *ssid_name = "ssdt";    //这里改你想要的Wi-Fi名，必须是全英文！
-static const char *ssid_pwd = "zxyssdt112233";  //这里是密码，长度大于8位，建议英文和字母混合
-```
-5. 最后请不要在驱动项目的Issue询问Build和使用方法了，不会咱们就安心等正式版驱动。
-
-### 4.隔空投送
-🚫不可用！
-
 ## Intel蓝牙问题
 `10.15` 以前的版本,若蓝牙无法连接/搜索 请从 Windows **热重启** 进入MacOS。  
-`10.15` 之后的版本注入zxystd大佬的 [IntelBluetoothFirmware](https://github.com/zxystd/IntelBluetoothFirmware/releases) 解决
->尽量使用 `1.0.3` 版本,两个驱动一起注入。
+`10.15` 之后的版本注入zxystd大佬的 [IntelBluetoothFirmware](https://github.com/zxystd/IntelBluetoothFirmware/releases)
 
 ## Fn按键
 1. Fn按键目前 `亮度调节` 和 `禁用触控板` 暂时无法使用,可以自己修改DSDT调整  
-2. 另外 `Fn + F1` 休眠建议**不使用**! 按下之后会立即给`USB`和`键盘`断电，只有`电源键`才能唤醒并且有概率无法唤醒。
+2. 另外 `Fn + F1` 休眠建议**不使用**! 按下之后会立即给`USB`和`键盘`断电，只有`电源键`才能唤醒并且**无法唤醒**!
 3. Fn休眠无法唤醒后第一次启动到clover的时候无法正常加载键盘  
    临时解决方案：
    1. 设置默认引导项目
    2. 手动从BIOS引导至Windows
 
-## HDMI问题
-升级到10.15.4之后HDMI出现了无法使用的情况，删除设备中的属性，重新注入platform-id：`0x19160000`  
-使用hackintool按照10.14方法定制会出现HDIM无法使用，显卡其他功能正常。  
-使用platform-id注入能使用HDMI，但是进rec的时候会无法驱动。  
->我还在实验新的参数，自己取舍吧。
+## HDMI
+HDMI 目前声音仍然从内建声卡输出
 
 ## 开启HiDPI支持
 源自 [one-key-hidpi](https://github.com/xzhih/one-key-hidpi) 项目  
@@ -115,6 +102,7 @@ static const char *ssid_pwd = "zxyssdt112233";  //这里是密码，长度大于
 **请不要尝试使用任何方法让MacOS对NTFS进行读写！**  
 **请不要尝试使用任何方法让MacOS对NTFS进行读写！**  
 我知道有很多方法可以让MacOS读取NTSF卷，但是无论是所谓的 `原生` 还是 `NTFS for Mac` 都有可能造成NTFS卷损坏  
+>友情提示：我的非气会传染，我身边的朋友包括我自己都翻车了。而且是移动硬盘附赠的正版 `NTFS for Mac` ！
 
 ### 修复方案
 1.回到Windows 或者winPE尝试使用以下命令修复(数据无损)
@@ -127,8 +115,6 @@ chkdsk D: /f
 2.若仍然无效请尝试使用DG修复分区(数据无损)  
 
 3.准备数据救援或者直接格盘吧
-
->友情提示：我的非气会传染，我身边的朋友包括我自己都翻车了。而且是移动硬盘附赠的正版 `NTFS for Mac` ！
 
 ## DSDT修改
 ### 工具
@@ -155,8 +141,8 @@ iasl -da -dl DSDT.aml
 iasl -ve DSDT.dsl
 ```
 >建议使用联合编译，减少报错。
+
 ### 原版DSTD除错
->请务必使用 `iasl` 进行编译和反编译，`MaciASL` 不支持`iASL 6.1` !
 
 #### unexpected PARSEOP_ZERO 错误
 - 方法1  
@@ -173,11 +159,13 @@ iasl -ve DSDT.dsl
    报错处修改为`Return (SDSM( Arg0, Arg1, Arg2, Arg3))`  
    然后把 `External (SDSM, IntObj)` 改成 `External (SDSM, MethodObj)`
 
->1. 若MaciASL补丁长时间无法加载可到[GitHub](https://github.com/RehabMan/Laptop-DSDT-Patch)下载
->2. 无视 `MaciASL` 所有报错，一切以 `iasl` 输出为准!
+>1. 请务必使用 `iasl` 进行编译和反编译，`MaciASL` 不支持`iASL 6.1` !
+>2. 若MaciASL补丁长时间无法加载可到[GitHub](https://github.com/RehabMan/Laptop-DSDT-Patch)下载
+>3. 无视 `MaciASL` 所有报错，一切以 `iasl` 输出为准!
+
 
 ## 升级后无法启动解决方案
-1. 升级`lilu.kext` 和 `WhateverGreen.kext`
+1. 升级`Clover`、`lilu.kext` 和 `WhateverGreen.kext`
 2. 临时注入显卡ID`0x12345678`, 进入系统重新注入正确ID
 3. 进入Recovery模式重建缓存或删除`/System/Library/Caches` 目录下所有内容
 
@@ -185,7 +173,6 @@ iasl -ve DSDT.dsl
 1. Clover禁止加载 `AppleIntelLpssI2C.kext` 和 `AppleIntelLpssI2CController.kext` 两个驱动
 2. 从SLE中删除上述文件。
  
-
 ## 使用建议
 1. 不要在有重要资料的硬盘安装MacOS
 2. 放下对NTFS的执念，真想试验那么请不要对NTFS执行**写**操作和**密集的读取**操作

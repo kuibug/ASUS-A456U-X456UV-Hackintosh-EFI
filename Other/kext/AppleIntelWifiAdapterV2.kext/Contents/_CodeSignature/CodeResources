@@ -4,82 +4,262 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Resources/iwlwifi-3160-16.ucode</key>
+		<key>Resources/iwlwifi-3160-17.ucode</key>
 		<data>
-		7ik9CydyUADcYRaRKuJXnGiVBcU=
+		n803PiqJDqdkb31LC5wxDbh7qAc=
 		</data>
-		<key>Resources/iwlwifi-7260-16.ucode</key>
+		<key>Resources/iwlwifi-3168-29.ucode</key>
 		<data>
-		P7sbijXOTbZA/6hrkeaMeIHgYzE=
+		WMFrvwr8D1q9n9Qd5IarvNa14Kk=
 		</data>
-		<key>Resources/iwlwifi-7265-16.ucode</key>
+		<key>Resources/iwlwifi-7260-17.ucode</key>
 		<data>
-		2THDDX2N3LGGZT2UCImY92hKkGM=
+		dVvvCZCl4t7Q1N/V10QxXJTL4NU=
 		</data>
-		<key>Resources/iwlwifi-7265D-16.ucode</key>
+		<key>Resources/iwlwifi-7265-17.ucode</key>
 		<data>
-		LEp2uqlh1DXLnjpHq784yC/OiC4=
+		swITIRvwxihdFue5uhFFkC1Aw+A=
 		</data>
-		<key>Resources/iwlwifi-8000C-16.ucode</key>
+		<key>Resources/iwlwifi-7265D-27.ucode</key>
 		<data>
-		QP/mvbdXAeGwVrJ8LQdSZS7UBEI=
+		wsDmhA8fzszAP8rjdFJoN2e7xXU=
+		</data>
+		<key>Resources/iwlwifi-8000C-36.ucode</key>
+		<data>
+		dfJmwCrteaCoXRAkV20JD2iGWi8=
+		</data>
+		<key>Resources/iwlwifi-8265-34.ucode</key>
+		<data>
+		xPgScus2nb07OOMqCqEysxwhjZE=
+		</data>
+		<key>Resources/iwlwifi-8265-36.ucode</key>
+		<data>
+		ha7iwd3C+O7QN8MgnVt590yltPs=
+		</data>
+		<key>Resources/iwlwifi-9000-pu-b0-jf-b0-46.ucode</key>
+		<data>
+		alIp80gktdtqh4ryRuHiq+SIy/k=
+		</data>
+		<key>Resources/iwlwifi-9260-th-b0-jf-b0-46.ucode</key>
+		<data>
+		rSOfFpUUgxM6bozd8lTMQqRuP9I=
+		</data>
+		<key>Resources/iwlwifi-Qu-b0-hr-b0-48.ucode</key>
+		<data>
+		SLhXUJXcdJ0XUbJk3cLFU1KwnP8=
+		</data>
+		<key>Resources/iwlwifi-Qu-b0-jf-b0-48.ucode</key>
+		<data>
+		LbYx6MVm5xka3XTqmaF6dHgP9/c=
+		</data>
+		<key>Resources/iwlwifi-Qu-c0-hr-b0-48.ucode</key>
+		<data>
+		0PneLPh9mC3ONG1ZRPUbytkBoY0=
+		</data>
+		<key>Resources/iwlwifi-Qu-c0-jf-b0-48.ucode</key>
+		<data>
+		eejD+QPkehyK6hP1PfVjvWWcObY=
+		</data>
+		<key>Resources/iwlwifi-QuZ-a0-hr-b0-48.ucode</key>
+		<data>
+		7xDYjVNf0tz5fIfRnuM49L8WEFY=
+		</data>
+		<key>Resources/iwlwifi-QuZ-a0-jf-b0-48.ucode</key>
+		<data>
+		vbFkns+ACg5ffJFdziYRRqJNePs=
+		</data>
+		<key>Resources/iwlwifi-cc-a0-48.ucode</key>
+		<data>
+		Cx1jGmj+FhtEyQ+b/VRdLPUl3I8=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Resources/iwlwifi-3160-16.ucode</key>
+		<key>Resources/iwlwifi-3160-17.ucode</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7ik9CydyUADcYRaRKuJXnGiVBcU=
+			n803PiqJDqdkb31LC5wxDbh7qAc=
 			</data>
 			<key>hash2</key>
 			<data>
-			cyVHnjC2mLaGH8AbGojy8IaL0zR8DQKFVSnZDBWk4JA=
+			Dok8HtdMMYYEdQjpNEKy1xoH3V+sANnb22jzRAfXvhQ=
 			</data>
 		</dict>
-		<key>Resources/iwlwifi-7260-16.ucode</key>
+		<key>Resources/iwlwifi-3168-29.ucode</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			P7sbijXOTbZA/6hrkeaMeIHgYzE=
+			WMFrvwr8D1q9n9Qd5IarvNa14Kk=
 			</data>
 			<key>hash2</key>
 			<data>
-			KlbDP4EekTMEujmZTe3B8o6mUgoayYiGA/yXePlp31I=
+			2iU3hAPrI8tZloh8RV0gc3eDmsHYY2k7FVHpRT8IM98=
 			</data>
 		</dict>
-		<key>Resources/iwlwifi-7265-16.ucode</key>
+		<key>Resources/iwlwifi-7260-17.ucode</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2THDDX2N3LGGZT2UCImY92hKkGM=
+			dVvvCZCl4t7Q1N/V10QxXJTL4NU=
 			</data>
 			<key>hash2</key>
 			<data>
-			2dRjYc+/MFJiJIM511ivvWYWn02WvxEQxALQAslJvIQ=
+			XYGmAD3wIopJetJ/kWuiyXlhS0xDmw9FpfKHPcBgf+g=
 			</data>
 		</dict>
-		<key>Resources/iwlwifi-7265D-16.ucode</key>
+		<key>Resources/iwlwifi-7265-17.ucode</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LEp2uqlh1DXLnjpHq784yC/OiC4=
+			swITIRvwxihdFue5uhFFkC1Aw+A=
 			</data>
 			<key>hash2</key>
 			<data>
-			TdPaP15ynSNVE3qBUt+DCFk5NqA8wfrWXpkWwaNoJgY=
+			kfaZMI8QKp7ZAhfYE7/bNVRk7OlYpPislrul6dd/6HA=
 			</data>
 		</dict>
-		<key>Resources/iwlwifi-8000C-16.ucode</key>
+		<key>Resources/iwlwifi-7265D-27.ucode</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QP/mvbdXAeGwVrJ8LQdSZS7UBEI=
+			wsDmhA8fzszAP8rjdFJoN2e7xXU=
 			</data>
 			<key>hash2</key>
 			<data>
-			JyNzffliiLrc8XCylFjc5bRYDefqluLS/+gWj1YaqE8=
+			k8Hp0/Rb17h4juQFhnSMnCkKV56tjIa/TFKtzH48mg4=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-8000C-36.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dfJmwCrteaCoXRAkV20JD2iGWi8=
+			</data>
+			<key>hash2</key>
+			<data>
+			n1uemfzueyVTOcIi4U9ADb/G+LoBa9GJxePk8/9Amw0=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-8265-34.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xPgScus2nb07OOMqCqEysxwhjZE=
+			</data>
+			<key>hash2</key>
+			<data>
+			L4wPKyxC1huChKKj07K14KUKG+jIrbUK5JuAYgE22/8=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-8265-36.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ha7iwd3C+O7QN8MgnVt590yltPs=
+			</data>
+			<key>hash2</key>
+			<data>
+			NNiGfDqFW8RMnCtw3dsqY3VXmjwNAmH4tImZtbtnqbQ=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-9000-pu-b0-jf-b0-46.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			alIp80gktdtqh4ryRuHiq+SIy/k=
+			</data>
+			<key>hash2</key>
+			<data>
+			j9X72Voip4mFsujSy5oYtj7qavYA3m6yrlycG1kl8T8=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-9260-th-b0-jf-b0-46.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rSOfFpUUgxM6bozd8lTMQqRuP9I=
+			</data>
+			<key>hash2</key>
+			<data>
+			hHn3HLtxQJhtvLjj8F9cnNPjZVHFqWfN/XOuIQZSRBw=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-Qu-b0-hr-b0-48.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SLhXUJXcdJ0XUbJk3cLFU1KwnP8=
+			</data>
+			<key>hash2</key>
+			<data>
+			wciAGRyT7aFfCSHF2N2iulTBsLK6cVV2PR2UzlFQopc=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-Qu-b0-jf-b0-48.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LbYx6MVm5xka3XTqmaF6dHgP9/c=
+			</data>
+			<key>hash2</key>
+			<data>
+			OwxSGDzY+tZ1ecU60KCIvwb2DZ3cW0yQc/YU9Nm/8og=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-Qu-c0-hr-b0-48.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0PneLPh9mC3ONG1ZRPUbytkBoY0=
+			</data>
+			<key>hash2</key>
+			<data>
+			ywHPQ4ssO8Oyso23hBWv6ciL7DssgJjPA3Zvwu7ZVWo=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-Qu-c0-jf-b0-48.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eejD+QPkehyK6hP1PfVjvWWcObY=
+			</data>
+			<key>hash2</key>
+			<data>
+			gK/7JaSxzJ3G0dwNOTklEzaKK0FhOxCziXi6vkgcVrs=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-QuZ-a0-hr-b0-48.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7xDYjVNf0tz5fIfRnuM49L8WEFY=
+			</data>
+			<key>hash2</key>
+			<data>
+			uIS4S5hy+ffsgZMO++3ozhnImO1/7SpuHYZSJVA7iA8=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-QuZ-a0-jf-b0-48.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vbFkns+ACg5ffJFdziYRRqJNePs=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZhZCgvJlxxlZNC67nnFoTvljBFoBh0SeIGGFAga77/E=
+			</data>
+		</dict>
+		<key>Resources/iwlwifi-cc-a0-48.ucode</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cx1jGmj+FhtEyQ+b/VRdLPUl3I8=
+			</data>
+			<key>hash2</key>
+			<data>
+			w/M70oq3onkCjz8o6RxKI5rNxAHkGrOJiT6bpfQHNaM=
 			</data>
 		</dict>
 	</dict>
