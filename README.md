@@ -26,21 +26,24 @@
 > ⚠️**修改三码之前请勿登陆IMessage等应用**! <font size='1'>封号别来找我/doge</font>
 
 功能快速预览
-| 功能/设备      | 能用 | 不能用 | 备注         |
-|----------------|:----:|:------:|--------------|
-| CX8050音频     | [x]  |        |              |
-| 核显HD520      | [x]  |        |              |
-| 独显920MX      |      |  [x]   |              |
-| HDMI           | [x]  |        |              |
-| 有线网卡       | [x]  |        |              |
-| 蓝牙           | [x]  |        | 10.15+ 可用  |
-| WiFi           |      |  [x]   |              |
-| CPU变频        | [x]  |        |              |
-| 触控板&手势    | [x]  |        |              |
-| Fn键           | [x]  |        |              |
-| 摄像头         | [x]  |        |              |
-| 电池           | [x]  |        |              |
-| USB3.0 & TypeC | [x]  |        |              |
+✅ 完美
+⭕️ 能用但是有问题
+❌ 不可用
+| 功能/设备      | 能用 | 不能用 | 备注                        |
+|----------------|:----:|:------:|-----------------------------|
+| CX8050音频     |  ✅   |        |                             |
+| 核显HD520      |  ✅   |        |                             |
+| 独显920MX      |      |   ❌    |                             |
+| HDMI           |  ✅   |        | [HDMI](#HDMI)               |
+| 有线网卡       |  ✅   |        |                             |
+| 蓝牙           |  ✅   |        | [Intel蓝牙](#Intel蓝牙问题) |
+| WiFi           |      |   ⭕️    | [基本能用](#3.WIFI)         |
+| CPU变频        |  ✅   |        |                             |
+| 触控板&手势    |  ✅   |        |                             |
+| Fn键           |  ⭕️   |        | [Fn](#Fn按键)               |
+| 摄像头         |  ✅   |        |                             |
+| 电池           |  ✅   |        |                             |
+| USB3.0 & TypeC |  ✅   |        |                             |
 
 
 ## 哪些不能用？
@@ -51,10 +54,10 @@
 ### ~~2.触控板(请务必外接USB/蓝牙鼠标！)~~
 已修复，感谢[望海之洲](https://www.penghubingzhou.cn)提供的[教程](https://www.penghubingzhou.cn/2019/07/24/VoodooI2C%20DSDT%20Edit%20FAQ/)
 
-### 3. WIFI !
+### 3.WIFI
 1. 为了160MHz换掉了原配的网卡，持有原卡的朋友试验过 `IO80211FamilyV2.kext` 可以驱动，有需要的充分利用百度下载安装。  
 2. 和我一样换了Intel无线网卡的，可以尝试分别尝试这几个驱动
-   1. [adapter](https://github.com/AppleIntelWifi/adapter)  目前我发连接到wifi 
+   1. [adapter](https://github.com/AppleIntelWifi/adapter)  目前仅能扫描到wifi 
    2. [itlwm](https://github.com/zxystd/itlwm) 可以连接
    3. ~~[AppleIntelWifiAdapter](https://github.com/zxystd/AppleIntelWifiAdapter)~~ 已停止维护
 
@@ -80,7 +83,6 @@ log show --last boot | grep 'itlwm' >> ~/Desktop/itlwm.log;
 
 ## Intel蓝牙问题
 `10.15` 以前的版本,若蓝牙无法连接/搜索 请从 Windows **热重启** 进入MacOS。  
-`10.15` 之后的版本注入zxystd大佬的 [IntelBluetoothFirmware](https://github.com/zxystd/IntelBluetoothFirmware/releases)
 
 ## Fn按键
 1. Fn按键目前 `亮度调节` 和 `禁用触控板` 暂时无法使用,可以自己修改DSDT调整  
@@ -91,7 +93,8 @@ log show --last boot | grep 'itlwm' >> ~/Desktop/itlwm.log;
    2. 手动从BIOS引导至Windows
 
 ## HDMI
-HDMI 目前声音仍然从内建声卡输出
+HDMI 目前声音仍然从内建声卡输出  
+10.15.4 等待WTG修复中
 
 ## 开启HiDPI支持
 源自 [one-key-hidpi](https://github.com/xzhih/one-key-hidpi) 项目  
