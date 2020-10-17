@@ -6,13 +6,7 @@
 
 | 文件(夹)                      | 作用              | 备注                         |
 |-------------------------------|-------------------|------------------------------|
-| AppleIntelWifiAdapterV2.kext  | Intel无线驱动     | 能扫描但是无法连接到wifi     |
 | HoRNDIS.kext                  | USB热点拓展       | 10.14睡眠后偶尔假死          |
-| itlwmTool.sh                  | 安装itlwm        | 自己写的不保证稳定性         |
-| itlwm.kext                    | intel wifi驱动    | SSID：China passwd：ChinaNB6 |
-| itlwmx.kext                   | 疑似AX200系列驱动 | SSID：China passwd：ChinaNB6 |
-| itl80211.kext                 | itlwm的库         |                              |
-|                               |                   |                              |
 | origin                        | clover提取的DSDT  |                              |
 | acpi_dsdt.aml win下提取的DSDT |                   | 理论上和origin内的DSDT一样   |
 
