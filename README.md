@@ -155,4 +155,5 @@ iasl -ve DSDT.dsl
 3. 双系统建议建立独立 `exFAT` 分区，作为文件交换使用(本非酋 `NTFS for mac` 也翻车了，硬盘有价数据无价)
 
 > 附：大佬收集的 [常用驱动列表](https://blog.tlhub.cn/hackintosh-tools.html)  
-> 挖坑：后期有时间折腾一下OC(大佬们逐渐放弃clover的兼容测试...)
+> ~挖坑：后期有时间折腾一下OC(大佬们逐渐放弃clover的兼容测试...)~
+> 机器功德圆满飞升了，没法更新了，愿天堂没有奶茶。
